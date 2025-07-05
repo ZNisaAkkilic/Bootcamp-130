@@ -144,4 +144,10 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 - Kodlama sürecinde, Gemini kaynaklı olduğunu sonradan fark ettiğimiz hatalar bazı karışıklıklara yol açtı.  
 - Günlük toplantılarda zaman yönetimi daha iyi yapılabilirdi. Daily Scrum süreleri zaman zaman 15 dakikayı aştı.  
 
+**3. Gelecek İçin Neyi Değiştireceğiz?**
+
+-Görevler başlamadan önce iş tanımlarını daha net ve yazılı şekilde belirleyeceğiz.
+-Dökümantasyonu sprint boyunca sürekli güncel tutacağız.
+-İletişimimizi daha da canlı tutmaya çalışacağız.
+-Günlük toplantılar için sabit bir saat ve süre belirleyeceğiz.
 
