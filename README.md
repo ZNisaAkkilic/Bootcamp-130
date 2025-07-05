@@ -86,7 +86,7 @@ Sprint Board, Trello üzerinden yönetilmiştir. Aşağıda hem Trello bağlant�
 ### 📸 Kanban Görüntüleri
 
 #### 📌 Trello - Kanban Görüntüsü 1  
-![Trello Kanban 1](https://github.com/user-attachments/assets/82bd6f3a-9dad-4f21-9a7a-96676af2c7b)
+![Trello Kanban 1](https://github.com/user-attachments/assets/c0ae47e9-f1b2-408c-a52c-acb3eec09dc5)
 
 #### 📌 Trello - Kanban Görüntüsü 2  
 ![Trello Kanban 2](https://github.com/user-attachments/assets/cbd8b471-0f84-493e-a31f-eb55b066e13b)
