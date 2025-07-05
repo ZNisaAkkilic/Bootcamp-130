@@ -77,20 +77,24 @@ Sprint Board Trello üzerinden gerçekleştirilmiştir. Hem trello linki hem de 
 ![Hata-2](https://github.com/user-attachments/assets/2a7019ba-783f-4014-9a71-ff3cc4f2a183)
 
 ## Sprint Review [05.07.2025]  
-**Sprint Hedefi:**
-Bu sprintte projenin temel iskeletinin oluşturulması, yapay zeka (AI) entegrasyonunun tamamlanması ve basit bir kullanıcı arayüzünün hazırlanması hedeflenmiştir.
-**Tamamlanan İşler:**
--Proje için gerekli olan kod yapısının iskeleti oluşturuldu ve modüler bir mimari kurgulandı. Bu sayede ileride yapılacak güncellemeler daha kolay yönetilebilir hale getirildi.
--Kullanıcı arayüzünün temel düzeyde ilk tasarımı geliştirildi. Arayüz, tıp öğrencisinin sistemle etkileşimini sağlayacak sade bir tasarımla hazırlandı.
--Yapay zeka modülü başarıyla sisteme entegre edildi. AI, önceden tanımlanan hastalık senaryolarını canlandırabiliyor ve kullanıcıyla etkileşime geçebiliyor.
--Sistem üzerinde karşılaşılan teknik hatalar (bug'lar) tespit edilerek çözüldü. Uygulamanın genel kararlılığı artırıldı.
--Ekip üyeleri projenin mevcut durumunu olumlu karşıladı ve sürece aktif şekilde dahil oldu. -Proje, takım tarafından sahiplenildi ve ilerleyişi onaylandı.
-**Geri Bildirimler ve Sonraki Adımlar:**
-Mevcut arayüz üzerinde yapılacak iyileştirmeler belirlendi. Kullanıcı deneyimini artırmak amacıyla farklı butonlar ve listeleme seçeneklerinin eklenmesine karar verildi.
-Gelecek sprintte arayüzün işlevselliği genişletilecek, kullanıcıdan gelen geri bildirimler doğrultusunda sistem daha etkileşimli hale getirilecektir.
-Consulted rolünde olan kişiler ile iletişime geçilmesine ve fikir alışverişi yapılmasına karar verilmiştir.
-**Sprint Review Katılımcıları:** Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 
+**Sprint Hedefi:**  
+Bu sprintte projenin temel iskeletinin oluşturulması, yapay zeka (AI) entegrasyonunun tamamlanması ve basit bir kullanıcı arayüzünün hazırlanması hedeflenmiştir.
+
+**Tamamlanan İşler:**  
+- Proje için gerekli olan kod yapısının iskeleti oluşturuldu ve modüler bir mimari kurgulandı. Bu sayede ileride yapılacak güncellemeler daha kolay yönetilebilir hale getirildi.  
+- Kullanıcı arayüzünün temel düzeyde ilk tasarımı geliştirildi. Arayüz, tıp öğrencisinin sistemle etkileşimini sağlayacak sade bir tasarımla hazırlandı.  
+- Yapay zeka modülü başarıyla sisteme entegre edildi. AI, önceden tanımlanan hastalık senaryolarını canlandırabiliyor ve kullanıcıyla etkileşime geçebiliyor.  
+- Sistem üzerinde karşılaşılan teknik hatalar (bug'lar) tespit edilerek çözüldü. Uygulamanın genel kararlılığı artırıldı.  
+- Ekip üyeleri projenin mevcut durumunu olumlu karşıladı ve sürece aktif şekilde dahil oldu. Proje, takım tarafından sahiplenildi ve ilerleyişi onaylandı.
+
+**Geri Bildirimler ve Sonraki Adımlar:**  
+Mevcut arayüz üzerinde yapılacak iyileştirmeler belirlendi. Kullanıcı deneyimini artırmak amacıyla farklı butonlar ve listeleme seçeneklerinin eklenmesine karar verildi.  
+Gelecek sprintte arayüzün işlevselliği genişletilecek, kullanıcıdan gelen geri bildirimler doğrultusunda sistem daha etkileşimli hale getirilecektir.  
+Consulted rolünde olan kişiler ile iletişime geçilmesine ve fikir alışverişi yapılmasına karar verilmiştir.
+
+**Sprint Review Katılımcıları:**  
+Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 
 ## Sprint Retrospektif [05.07.2025]
 **1. Neler İyi Gitti?**
