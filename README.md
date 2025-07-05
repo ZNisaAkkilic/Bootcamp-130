@@ -148,8 +148,8 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 
 **➡️3. Gelecek İçin Neyi Değiştireceğiz?**
 
--Görevler başlamadan önce iş tanımlarını daha net ve yazılı şekilde belirleyeceğiz.
--Dökümantasyonu sprint boyunca sürekli güncel tutacağız.
--İletişimimizi daha da canlı tutmaya çalışacağız.
--Günlük toplantılar için sabit bir saat ve süre belirleyeceğiz.
+- Görevler başlamadan önce iş tanımlarını daha net ve yazılı şekilde belirleyeceğiz.
+- Dökümantasyonu sprint boyunca sürekli güncel tutacağız.
+- İletişimimizi daha da canlı tutmaya çalışacağız.
+- Günlük toplantılar için sabit bir saat ve süre belirleyeceğiz.
 
