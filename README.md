@@ -109,12 +109,16 @@ Sprint Board, Trello üzerinden yönetilmiştir. Aşağıda hem Trello bağlant�
 
 ![Konuşma Görüntüsü](https://github.com/user-attachments/assets/7ea2b549-674d-4851-a9f8-bd23c7777eb6)
 
-### ❌ Hata Görüntüsü 1
+### ❌ Hata Görüntüsü-
+Bu hatada AI hep aynı yanıtı vermek sureti ile hata yapmıştır. Sistem buga girmiş ancak daha sonra sorun çözülmüştür.
+![Hata-0](https://github.com/user-attachments/assets/02b08b91-45b8-4e49-aa6e-4ab6532912cd)
 
+### ❌ Hata Görüntüsü-1
+AI entegrasyonu sırasında alınan bir hatanın görüntüsüdür. Hata çözülmüştür.
 ![Hata 1](https://github.com/user-attachments/assets/40a803ab-4619-4ca1-9b30-c46565a8acbd)
 
-### ❌ Hata Görüntüsü 2
-
+### ❌ Hata Görüntüsü-2
+AI entegrasyonu sırasında alınan başka bir hatanın görüntüsüdür. Hata çözülmüştür.
 ![Hata 2](https://github.com/user-attachments/assets/2a7019ba-783f-4014-9a71-ff3cc4f2a183)
 
 
