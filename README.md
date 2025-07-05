@@ -25,34 +25,47 @@ CaseZero, tıp öğrencilerinin klinik teşhis ve hasta yönetimi becerilerini g
 
 **Çoklu Dil Desteği (Planlama Aşaması)** : İlk sürümde Türkçe destek sağlar.. Gelecekte diğer diller için genişletilebilir(planlama aşaması) altyapı.
 
-## Hedef Kitle
-1. Tıp Öğrencileri
--Klinik bilgi ve teşhis becerilerini geliştirmek isteyen lisans düzeyindeki tıp öğrencileri.
--Teorik bilgilerini pratiğe dökme ihtiyacı olan öğrenciler.
--Sınıf ortamı dışında, güvenli ve tekrar edilebilir bir ortamda vaka deneyimi yaşamak isteyenler.
+## 🎯 Hedef Kitle
 
-2. Tıp Eğitmenleri ve Akademisyenler
--Öğrencilerin klinik becerilerini takip etmek ve değerlendirmek isteyen hocalar.
--Vaka simülasyonları ile ders içeriklerini zenginleştirmek isteyen akademik kadro.
--Öğrenci performansını veri tabanlı analizlerle desteklemek isteyen eğitimciler.
+### 1. Tıp Öğrencileri
+- Klinik bilgi ve teşhis becerilerini geliştirmek isteyen lisans düzeyindeki tıp öğrencileri.
+- Teorik bilgilerini pratiğe dökme ihtiyacı olan öğrenciler.
+- Sınıf ortamı dışında, güvenli ve tekrar edilebilir bir ortamda vaka deneyimi yaşamak isteyenler.
 
-3. Tıp Fakülteleri ve Eğitim Kurumları
--Modern eğitim metotları ile öğrencilerine interaktif öğrenme deneyimi sunmak isteyen fakülteler.
--Uzaktan veya hibrit tıp eğitimi için dijital araç arayışında olan kurumlar.
+### 2. Tıp Eğitmenleri ve Akademisyenler
+- Öğrencilerin klinik becerilerini takip etmek ve değerlendirmek isteyen hocalar.
+- Vaka simülasyonları ile ders içeriklerini zenginleştirmek isteyen akademik kadro.
+- Öğrenci performansını veri tabanlı analizlerle desteklemek isteyen eğitimciler.
 
-4. Klinik Eğitim Merkezleri ve Hastane Eğitim Birimleri
--Pratik yapma imkanı kısıtlı olan genç doktorlar için simülasyon tabanlı öğrenme ortamları oluşturmak isteyen merkezler.
--Teşhis yeteneklerini geliştirmek ve vaka çeşitliliğine erişmek isteyen sağlık personeli.
+### 3. Tıp Fakülteleri ve Eğitim Kurumları
+- Modern eğitim metotları ile öğrencilerine interaktif öğrenme deneyimi sunmak isteyen fakülteler.
+- Uzaktan veya hibrit tıp eğitimi için dijital araç arayışında olan kurumlar.
 
-## Product Backlog
-![image](https://github.com/user-attachments/assets/47f8c4e8-cde2-4a05-b230-cd62741c57f1)
+### 4. Klinik Eğitim Merkezleri ve Hastane Eğitim Birimleri
+- Pratik yapma imkanı kısıtlı olan genç doktorlar için simülasyon tabanlı öğrenme ortamları oluşturmak isteyen merkezler.
+- Teşhis yeteneklerini geliştirmek ve vaka çeşitliliğine erişmek isteyen sağlık personeli.
+
+## 📦 Product Backlog
+
+Aşağıda, projeye ait önceliklendirilmiş işler listesinin (Product Backlog) güncel hali yer almaktadır. Backlog, sprint planlamalarında referans olarak kullanılmakta ve gereksinimlerin önceliklendirilmesini sağlamaktadır.
+
+![Product Backlog Görseli](https://github.com/user-attachments/assets/47f8c4e8-cde2-4a05-b230-cd62741c57f1)
+
 
 # Sprint-1
-## Sprint Notları
--Proje yönetimi için Trello aracı kullanılmasına karar verilmiştir.
--İletişim çoğunlukla Whatsapp ve MS Teams üzerinden gerçekleştirilecektir. Whatsapp, daha çok ekip üyelerinin gün içinde sesli ve/veya görüntülü konuşmak için müsait olmadığı durumlarda hızlı yanıt almak ve aklındakileri paylaşmak için kullandığı bir yol olmuştur.  MS Teams ise Daily Scrum toplantılarının yapıldığı araçtır. Ekran paylaşımı yapılması, ses kalitesinin yeterliliği ve ücretsiz 60 dakikaya kadar konuşabilme özellikleri ile sürece katkı sağlamaktadır.
--Projenin İskeleti oluşturulmuş, temel yapı taşları oturtulmuştur. Temel kod yapısı, arayüz ve AI entegrasyonu sağlanmıştır.
--Takımdaki görev dağılımı etkin bir şekilde gerçekleştirildi ve takım üyeleri rolleri ve projeyi sahiplendi.
+## 📝 Sprint Notları
+
+- Proje yönetimi için **Trello** aracı kullanılmasına karar verilmiştir.
+
+- İletişim çoğunlukla **WhatsApp** ve **Microsoft Teams** üzerinden gerçekleştirilmiştir.  
+  - WhatsApp, ekip üyelerinin gün içinde sesli/görüntülü konuşmaya uygun olmadıkları durumlarda hızlı yanıt almak ve fikir paylaşmak için tercih edilmiştir.  
+  - Microsoft Teams ise **Daily Scrum** toplantılarının gerçekleştirildiği platform olmuştur. Ekran paylaşımı, yeterli ses kalitesi ve 60 dakikaya kadar ücretsiz görüşme imkânı gibi avantajlarıyla sürece katkı sağlamıştır.
+
+- Projenin iskeleti oluşturulmuş, temel yapı taşları oturtulmuştur.  
+  - Temel kod yapısı kurulmuş, kullanıcı arayüzü hazırlanmış ve yapay zeka (AI) entegrasyonu başarıyla gerçekleştirilmiştir.
+
+- Takım içi görev dağılımı etkin biçimde yapılmıştır. Tüm ekip üyeleri rollerini sahiplenmiş ve projeye aktif katkı sağlamıştır.
+
 
 ## Tahmin Edilen Puan ve Tamamlanan Puan
 İlk sprintte 100 puan tahmin edilmiştir. Sprint sonunda 100 puan tamamlanmıştır. 
@@ -62,19 +75,39 @@ Proje boyunca tahmini puan 300 olarak atanmıştır. Her sprintte puan 100 olmak
 
 ## Daily Scrum 
 
-## Sprint Board
-Sprint Board Trello üzerinden gerçekleştirilmiştir. Hem trello linki hem de ekran görüntüleri eklenmiştir.
-[Trello Sprint Review Öncesi Son Hali]([https://ornek-link.com](https://trello.com/invite/b/6867b1bc8d81994144d4d2e4/ATTI90b6709a1ea40d58f2ae2bf300006a8800D46E10/casezero-sprint-1))
-![trello-kanban-1](https://github.com/user-attachments/assets/82bd6f3a-9dad-4f21-9a7a-9667d![trello-kanban-2](https://github.com/user-attachments/assets/cbd8b471-0f84-493e-a31f-eb55b066e13b)
-6af2c7b)
-![Uploading trello-kanban-2.jpg…]()
-![trello-kanban-3](https://github.com/user-attachments/assets/add2d8ee-58db-4681-abba-9db765827ed3)
+## 📋 Sprint Board
 
-## Ürün Ekran Görüntüleri
-Ürün ekran görüntülerinde sürecin daha iyi anlaşılabilmesi adına alınan hatalardan bazılarının görüntüsü de eklenmiştir.
-![Konuşma-görüntüsü](https://github.com/user-attachments/assets/7ea2b549-674d-4851-a9f8-bd23c7777eb6)
-![Hata-1](https://github.com/user-attachments/assets/40a803ab-4619-4ca1-9b30-c46565a8acbd)
-![Hata-2](https://github.com/user-attachments/assets/2a7019ba-783f-4014-9a71-ff3cc4f2a183)
+Sprint Board, Trello üzerinden yönetilmiştir. Aşağıda hem Trello bağlantısı hem de ilgili sprintin ekran görüntüleri yer almaktadır.
+
+🔗 [Trello Sprint Review Öncesi Son Hali](https://trello.com/invite/b/6867b1bc8d81994144d4d2e4/ATTI90b6709a1ea40d58f2ae2bf300006a8800D46E10/casezero-sprint-1)
+
+### 🧩 Kanban Görüntüleri
+
+#### 📌 Trello - Kanban Görüntüsü 1  
+![Trello Kanban 1](https://github.com/user-attachments/assets/82bd6f3a-9dad-4f21-9a7a-96676af2c7b)
+
+#### 📌 Trello - Kanban Görüntüsü 2  
+![Trello Kanban 2](https://github.com/user-attachments/assets/cbd8b471-0f84-493e-a31f-eb55b066e13b)
+
+#### 📌 Trello - Kanban Görüntüsü 3  
+![Trello Kanban 3](https://github.com/user-attachments/assets/add2d8ee-58db-4681-abba-9db765827ed3)
+
+## 📸 Ürün Ekran Görüntüleri
+
+Ürünün geliştirme sürecine dair ekran görüntüleri aşağıda sunulmuştur. Sürecin daha iyi anlaşılabilmesi amacıyla, yalnızca kullanıcı arayüzü değil; karşılaşılan bazı hatalara ait ekran görüntüleri de eklenmiştir.
+
+### 🗣️ Konuşma Arayüzü
+
+![Konuşma Görüntüsü](https://github.com/user-attachments/assets/7ea2b549-674d-4851-a9f8-bd23c7777eb6)
+
+### ❌ Hata Görüntüsü 1
+
+![Hata 1](https://github.com/user-attachments/assets/40a803ab-4619-4ca1-9b30-c46565a8acbd)
+
+### ❌ Hata Görüntüsü 2
+
+![Hata 2](https://github.com/user-attachments/assets/2a7019ba-783f-4014-9a71-ff3cc4f2a183)
+
 
 ## Sprint Review [05.07.2025]  
 
@@ -97,20 +130,18 @@ Consulted rolünde olan kişiler ile iletişime geçilmesine ve fikir alışveri
 Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 
 ## Sprint Retrospektif [05.07.2025]
+
 **1. Neler İyi Gitti?**
--Takım içinde görev paylaşımı ve iletişim başarılıydı öyle ki ekip üyeleri birbirleri ile Linkedin üzerinden network dahi kurmuşlardır
--Sprint hedeflerine zamanında ulaşıldı.
--Sorunlar hızlı şekilde tespit edilip çözüldü.
--Ekip motivasyonu yüksekti, herkes projeye katkı sağladı.
+
+- Takım içinde görev paylaşımı ve iletişim başarılıydı; öyle ki ekip üyeleri birbirleriyle LinkedIn üzerinden network dahi kurmuştur.  
+- Sprint hedeflerine zamanında ulaşıldı.  
+- Sorunlar hızlı şekilde tespit edilip çözüldü.  
+- Ekip motivasyonu yüksekti, herkes projeye katkı sağladı.  
 
 **2. Neler Daha İyi Olabilirdi?**
--Projenin başlangıçta yeterince net tanımlanmaması nedeniyle zaman kaybı yaşandı.
--Kodlama sürecinde Gemini kaynaklı olduğunu sonradan fark ettiğimiz hatalar oldu bu bir takım karışıklıklara yol açtı.
--Günlük  toplantılarda zaman yönetimi daha iyi yapılabilirdi. Daily scrum süreleri 15 dakikayı zaman zaman geçti. 
 
-**3. Gelecek İçin Neyi Değiştireceğiz?**
--Görevler başlamadan önce iş tanımlarını daha net ve yazılı şekilde belirleyeceğiz.
--Dökümantasyonu sprint boyunca sürekli güncel tutacağız.
--İletişimimizi daha da canlı tutmaya çalışacağız.
--Günlük toplantılar için sabit bir saat ve süre belirleyeceğiz.
+- Projenin başlangıçta yeterince net tanımlanmaması nedeniyle zaman kaybı yaşandı.  
+- Kodlama sürecinde, Gemini kaynaklı olduğunu sonradan fark ettiğimiz hatalar bazı karışıklıklara yol açtı.  
+- Günlük toplantılarda zaman yönetimi daha iyi yapılabilirdi. Daily Scrum süreleri zaman zaman 15 dakikayı aştı.  
+
 
