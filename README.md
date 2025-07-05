@@ -54,7 +54,8 @@ Aşağıda, projeye ait önceliklendirilmiş işler listesinin (Product Backlog)
 
 ![Product Backlog Görseli](https://github.com/user-attachments/assets/47f8c4e8-cde2-4a05-b230-cd62741c57f1)
 
-## RACI Matrisi
+## 👥 RACI Matrisi
+RACI Matrisi alışılagelmişten farklı olarak Scrum için yapılandırılmıştır. Referans(https://agile-od.com/mmdojo/9883/scrum-raci).
 ![RACI](https://github.com/user-attachments/assets/1930ae0e-918f-48b1-8a2d-34752b982c4c)
 
 # Sprint-1
