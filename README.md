@@ -1,6 +1,6 @@
 # CaseZero
 
-## Takım İsmi
+## 🦾Takım İsmi
 Bootcamp AI-130
 
 ## ⭐Takım Rolleri
