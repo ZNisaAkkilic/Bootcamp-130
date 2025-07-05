@@ -3,18 +3,20 @@
 ## Takım İsmi
 Bootcamp AI-130
 
-## Takım Rolleri
+## ⭐Takım Rolleri
 *Rumeysa Nur Demirbaş*- Scrum Master /Developer
+
 *Yakup Dolat*- Product Owner /Developer
+
 *Zeynep Nisa Akkılıç*- Developer
 
-## Ürün İsmi
+## 0️⃣ Ürün İsmi
 CaseZero
 
-## Ürün Açıklaması
+## ☘️ Ürün Açıklaması
 CaseZero, tıp öğrencilerinin klinik teşhis ve hasta yönetimi becerilerini geliştirmeleri için tasarlanmış yenilikçi bir yapay zeka destekli hasta simülasyon platformudur. Yapay Zeka desteği ile vakalara dayanan dinamik ve etkileşimli hasta profilleriyle, öğrenciler sanal bir ortamda hastaların semptomlarını sorgulayabilir, teşhis koyma pratiği yapabilir ve klinik karar verme yeteneklerini güçlendirebilir.CaseZero, yapay zekâ teknlojisi sayesinde gerçek bir hasta ile konuşuyormuş hissi yaratır; böylece öğrenciler, teorik bilgilerini pratiğe dönüştürerek daha etkili ve güvenli bir öğrenme deneyimi yaşarlar.
 
-## Ürün Özellikleri
+## ✔️ Ürün Özellikleri
 **Dinamik AI Hasta Profilleri** :Gelişmiş yapay zeka motoru ile farklı hastalık ve semptom kombinasyonlarına sahip hasta karakterleri oluşturulur. Her hasta benzersiz yanıtlar verir, böylece tekrar eden eğitimler daha gerçekçi olur.
 
 **Doğal Dil İşleme Tabanlı Etkileşim**: Öğrenciler, hastaya doğal ve serbest metin bazlı sorular sorabilir.AI, semptomlara ve sorulara anlamlı, bağlama uygun yanıtlar verir. Bu da gerçek hastayla konuşma deneyimi sunar
@@ -45,7 +47,7 @@ CaseZero, tıp öğrencilerinin klinik teşhis ve hasta yönetimi becerilerini g
 - Pratik yapma imkanı kısıtlı olan genç doktorlar için simülasyon tabanlı öğrenme ortamları oluşturmak isteyen merkezler.
 - Teşhis yeteneklerini geliştirmek ve vaka çeşitliliğine erişmek isteyen sağlık personeli.
 
-## 📦 Product Backlog
+## 🗳️ Product Backlog
 
 Aşağıda, projeye ait önceliklendirilmiş işler listesinin (Product Backlog) güncel hali yer almaktadır. Backlog, sprint planlamalarında referans olarak kullanılmakta ve gereksinimlerin önceliklendirilmesini sağlamaktadır.
 
@@ -67,13 +69,13 @@ Aşağıda, projeye ait önceliklendirilmiş işler listesinin (Product Backlog)
 - Takım içi görev dağılımı etkin biçimde yapılmıştır. Tüm ekip üyeleri rollerini sahiplenmiş ve projeye aktif katkı sağlamıştır.
 
 
-## Tahmin Edilen Puan ve Tamamlanan Puan
+## 🏴󠁬󠁶󠀱󠀰󠀰󠁿Tahmin Edilen Puan ve Tamamlanan Puan
 İlk sprintte 100 puan tahmin edilmiştir. Sprint sonunda 100 puan tamamlanmıştır. 
 
-## Puan Tamamlama Mantığı
+## 💯 Puan Tamamlama Mantığı
 Proje boyunca tahmini puan 300 olarak atanmıştır. Her sprintte puan 100 olmak sureti ile çalışılması planlanmıştır.
 
-## Daily Scrum 
+## 💼 Daily Scrum 
 
 ## 📋 Sprint Board
 
@@ -81,7 +83,7 @@ Sprint Board, Trello üzerinden yönetilmiştir. Aşağıda hem Trello bağlant�
 
 🔗 [Trello Sprint Review Öncesi Son Hali](https://trello.com/invite/b/6867b1bc8d81994144d4d2e4/ATTI90b6709a1ea40d58f2ae2bf300006a8800D46E10/casezero-sprint-1)
 
-### 🧩 Kanban Görüntüleri
+### 📸 Kanban Görüntüleri
 
 #### 📌 Trello - Kanban Görüntüsü 1  
 ![Trello Kanban 1](https://github.com/user-attachments/assets/82bd6f3a-9dad-4f21-9a7a-96676af2c7b)
@@ -109,7 +111,7 @@ Sprint Board, Trello üzerinden yönetilmiştir. Aşağıda hem Trello bağlant�
 ![Hata 2](https://github.com/user-attachments/assets/2a7019ba-783f-4014-9a71-ff3cc4f2a183)
 
 
-## Sprint Review [05.07.2025]  
+## 👁️Sprint Review [05.07.2025]  
 
 **Sprint Hedefi:**  
 Bu sprintte projenin temel iskeletinin oluşturulması, yapay zeka (AI) entegrasyonunun tamamlanması ve basit bir kullanıcı arayüzünün hazırlanması hedeflenmiştir.
@@ -131,20 +133,20 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 
 ## Sprint Retrospektif [05.07.2025]
 
-**1. Neler İyi Gitti?**
+**✅1. Neler İyi Gitti?**
 
 - Takım içinde görev paylaşımı ve iletişim başarılıydı; öyle ki ekip üyeleri birbirleriyle LinkedIn üzerinden network dahi kurmuştur.  
 - Sprint hedeflerine zamanında ulaşıldı.  
 - Sorunlar hızlı şekilde tespit edilip çözüldü.  
 - Ekip motivasyonu yüksekti, herkes projeye katkı sağladı.  
 
-**2. Neler Daha İyi Olabilirdi?**
+**❌2. Neler Daha İyi Olabilirdi?**
 
 - Projenin başlangıçta yeterince net tanımlanmaması nedeniyle zaman kaybı yaşandı.  
 - Kodlama sürecinde, Gemini kaynaklı olduğunu sonradan fark ettiğimiz hatalar bazı karışıklıklara yol açtı.  
 - Günlük toplantılarda zaman yönetimi daha iyi yapılabilirdi. Daily Scrum süreleri zaman zaman 15 dakikayı aştı.  
 
-**3. Gelecek İçin Neyi Değiştireceğiz?**
+**➡️3. Gelecek İçin Neyi Değiştireceğiz?**
 
 -Görevler başlamadan önce iş tanımlarını daha net ve yazılı şekilde belirleyeceğiz.
 -Dökümantasyonu sprint boyunca sürekli güncel tutacağız.
