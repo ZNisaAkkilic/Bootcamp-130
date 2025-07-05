@@ -4,11 +4,12 @@
 Bootcamp AI-130
 
 ## ⭐Takım Rolleri
-*Rumeysa Nur Demirbaş*- Scrum Master /Developer
+| Name                 | Title                  | Socials                                                                                     |
+|----------------------|------------------------|---------------------------------------------------------------------------------------------|
+| Rumeysa Nur Demirbaş | Scrum Master / Developer | [![LinkedIn](https://cdn-icons-png.flaticon.com/16/174/174857.png)](https://www.linkedin.com/in/rumeysanur) |
+| Yakup Dolat          | Product Owner / Developer | [![LinkedIn](https://cdn-icons-png.flaticon.com/16/174/174857.png)](https://www.linkedin.com/in/yakup-dolat-678402255/) |
+| Zeynep Nisa Akkılıç  | Developer              | [![LinkedIn](https://cdn-icons-png.flaticon.com/16/174/174857.png)](https://www.linkedin.com/in/zeynep-nisa-akk%C4%B1l%C4%B1%C3%A7-b47ba9227/) |
 
-*Yakup Dolat*- Product Owner /Developer
-
-*Zeynep Nisa Akkılıç*- Developer
 
 ## 0️⃣ Ürün İsmi
 CaseZero
