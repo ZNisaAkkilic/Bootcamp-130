@@ -83,6 +83,9 @@ Bakınız: [Referans](https://agile-od.com/mmdojo/9883/scrum-raci)
 Proje boyunca tahmini puan 300 olarak atanmıştır. Her sprintte puan 100 olmak sureti ile çalışılması planlanmıştır.
 
 ## 💼 Daily Scrum 
+Daily Scrum toplantıları akşamüzeri saatlerinde yaklaşık 15 dakika kadar gerçekleştirilmiştir. Örnek bir toplantı ekran görüntüsü görülmektedir.
+![Meeting](https://github.com/user-attachments/assets/29692d25-5121-4b68-bc9a-6dbad02b7057)
+
 
 ## 📋 Sprint Board
 
