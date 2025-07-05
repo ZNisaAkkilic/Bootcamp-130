@@ -92,7 +92,7 @@ Consulted rolünde olan kişiler ile iletişime geçilmesine ve fikir alışveri
 **Sprint Review Katılımcıları:** Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 
 
-## Sprint Retrospektif [05.07.2025]##
+## Sprint Retrospektif [05.07.2025]
 **1. Neler İyi Gitti?**
 -Takım içinde görev paylaşımı ve iletişim başarılıydı öyle ki ekip üyeleri birbirleri ile Linkedin üzerinden network dahi kurmuşlardır
 -Sprint hedeflerine zamanında ulaşıldı.
