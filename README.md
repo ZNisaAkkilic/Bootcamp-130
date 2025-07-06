@@ -200,7 +200,7 @@ Sprint Board, Trello üzerinden yönetilmiştir. Aşağıda hem Trello bağlant�
 
 ### 🗣️ Konuşma Arayüzü
 
-![Konuşma Görüntüsü](https://github.com/user-attachments/assets/7ea2b549-674d-4851-a9f8-bd23c7777eb6)
+![[Konuşma-görüntüsü](https://github.com/user-attachments/assets/9b77cda0-2f84-40f7-8c47-d6306d480569)
 
 ![Konuşma Görüntüsü-2](https://github.com/user-attachments/assets/7f61369f-58bc-4e07-ae59-1fc8f50ce9a0)
 
