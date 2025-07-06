@@ -4,7 +4,7 @@
 Bootcamp AI-130
 
 ## ⭐Takım Rolleri
-| İsim                 | Rol                    | LinkedIn                                                                                    |
+| İsim                 | Rol                    | LinkedIn                                                                                    | 
 |----------------------|------------------------|---------------------------------------------------------------------------------------------|
 | Rumeysa Nur Demirbaş | Scrum Master / Developer | [![LinkedIn](https://cdn-icons-png.flaticon.com/16/174/174857.png)](https://www.linkedin.com/in/rumeysanur) |
 | Yakup Dolat          | Product Owner / Developer | [![LinkedIn](https://cdn-icons-png.flaticon.com/16/174/174857.png)](https://www.linkedin.com/in/yakup-dolat-678402255/) |
