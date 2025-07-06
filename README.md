@@ -66,9 +66,9 @@ Bakınız: [Referans](https://agile-od.com/mmdojo/9883/scrum-raci)
 
 - Proje yönetimi için **Trello** aracı kullanılmasına karar verilmiştir.
 
-- İletişim çoğunlukla **WhatsApp** ve **Microsoft Teams** üzerinden gerçekleştirilmiştir.  
+- İletişim çoğunlukla **WhatsApp** ve **Google Meet** üzerinden gerçekleştirilmiştir.  
   - WhatsApp, ekip üyelerinin gün içinde sesli/görüntülü konuşmaya uygun olmadıkları durumlarda hızlı yanıt almak ve fikir paylaşmak için tercih edilmiştir.  
-  - Microsoft Teams ise **Daily Scrum** toplantılarının gerçekleştirildiği platform olmuştur. Ekran paylaşımı, yeterli ses kalitesi ve 60 dakikaya kadar ücretsiz görüşme imkânı gibi avantajlarıyla sürece katkı sağlamıştır.
+  - Google Meet ise **Daily Scrum** toplantılarının gerçekleştirildiği platform olmuştur. Ekran paylaşımı, yeterli ses kalitesi ve 60 dakikaya kadar ücretsiz görüşme imkânı gibi avantajlarıyla sürece katkı sağlamıştır.
 
 - Projenin iskeleti oluşturulmuş, temel yapı taşları oturtulmuştur.  
   - Temel kod yapısı kurulmuş, kullanıcı arayüzü hazırlanmış ve yapay zeka (AI) entegrasyonu başarıyla gerçekleştirilmiştir.
