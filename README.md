@@ -50,7 +50,7 @@ CaseZero, tıp öğrencilerinin klinik teşhis ve hasta yönetimi becerilerini g
 
 ## 🗳️ Product Backlog
 
-Aşağıda, projeye ait önceliklendirilmiş işler listesinin (Product Backlog) güncel hali yer almaktadır. Backlog, sprint planlamalarında referans olarak kullanılmakta ve gereksinimlerin önceliklendirilmesini sağlamaktadır.
+Aşağıda, projeye ait önceliklendirilmiş işler listesinin (Product Backlog) güncel hali yer almaktadır. Backlog, sprint planlamalarında referans olarak kullanılmakta ve gereksinimlerin önceliklendirilmesini sağlamaktadır. Product Backlog kullanıcı hikayesi ve kabul kriterleri baz alınarak oluşturulmuştur.
 
 ![Product Backlog Görseli](https://github.com/user-attachments/assets/47f8c4e8-cde2-4a05-b230-cd62741c57f1)
 
@@ -85,44 +85,96 @@ Proje boyunca tahmini puan 300 olarak atanmıştır. Her sprintte puan 100 olmak
 ## 💼 Daily Scrum 
 Daily Scrum toplantıları akşamüzeri saatlerinde yaklaşık 15 dakika kadar gerçekleştirilmiştir. Toplantı ekran görüntüleri verilmiştir.
 
-### 23.06.2025
+<details>
+<summary>📂 23.06.2025</summary>
+
 ![23 06](https://github.com/user-attachments/assets/9282be6c-7358-41b9-9421-4fc684b9bb8a)
 
-### 24.06.2025
+</details>
+
+<details>
+<summary>📂 24.06.2025</summary>
+
 ![24 06](https://github.com/user-attachments/assets/40a1d7d4-3a3f-4efa-a529-77dc5fb4d09f)
 
-### 25.06.2025
+</details>
+
+<details>
+<summary>📂 25.06.2025</summary>
+
 ![25 06](https://github.com/user-attachments/assets/3d466d98-accd-409f-a9bf-9a0dafa23686)
 
-### 26.06.2025
+</details>
+
+<details>
+<summary>📂 26.06.2025</summary>
+
 ![26 06](https://github.com/user-attachments/assets/009f36e1-73ad-4c1b-9cd4-632acd6be651)
 
-### 27.06.2025
+</details>
+
+<details>
+<summary>📂 27.06.2025</summary>
+
 ![27 06](https://github.com/user-attachments/assets/3bd63586-bbd9-4aea-a98c-abdb6b9e952d)
 
-### 28.06.2025
+</details>
+
+<details>
+<summary>📂 28.06.2025</summary>
+
 ![28 06](https://github.com/user-attachments/assets/cc724590-0aa7-4703-8f47-c5d2897c25e3)
 
-### 29.06.2025
+</details>
+
+<details>
+<summary>📂 29.06.2025</summary>
+
 ![29 06](https://github.com/user-attachments/assets/95526282-3a8d-435a-8cf2-ccdbc03c2efb)
 
-### 30.06.2025
+</details>
+
+<details>
+<summary>📂 30.06.2025</summary>
+
 ![30 06](https://github.com/user-attachments/assets/7262cb29-ea14-4f61-be05-4a2abb2dfe7a)
 
-### 01.07.2025
+</details>
+
+<details>
+<summary>📂 01.07.2025</summary>
+
 ![01.07.2025](daily-scrums/2025-07-01.png)
 
-### 02.07.2025
+</details>
+
+<details>
+<summary>📂 02.07.2025</summary>
+
 ![02 07](https://github.com/user-attachments/assets/5aa000f7-00f6-40e0-beff-f89cbe8d077d)
 
-### 03.07.2025
+</details>
+
+<details>
+<summary>📂 03.07.2025</summary>
+
 ![03 07](https://github.com/user-attachments/assets/309cc721-ba59-4ce2-9ec8-7887e34568ed)
 
-### 04.07.2025
+</details>
+
+<details>
+<summary>📂 04.07.2025</summary>
+
 ![04 07](https://github.com/user-attachments/assets/58275241-6a88-429c-8b3c-3e872293e730)
 
-### 05.07.2025
+</details>
+
+<details>
+<summary>📂 05.07.2025</summary>
+
 ![05 07](https://github.com/user-attachments/assets/18eda7cf-3535-49b8-8870-40296fab36a3)
+
+</details>
 
 
 ## 📋 Sprint Board
