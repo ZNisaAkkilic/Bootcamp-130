@@ -423,32 +423,60 @@ Sprint Board, bu Sprint için de Trello üzerinden yönetilmiştir. Aşağıda i
 
 Ürünün geliştirme sürecine dair ekran görüntüleri aşağıda sunulmuştur.Farklı sütunların görünümü, açılış ekranı, sohbet ekranı, yanlış ve doğru tahminde geribildirim mekanizmasının nasıl çalıştığı ile ilgili görseller verilmiştir. Görsellerin açıklaması da üst kısmında yer almaktadır.
 
+
+
 ### Açılış Ekranı
 Uygulamanın açılış ekranı mevcut durumda görseldeki gibi görülmektedir.
+
+
 ![açılış-ekranı](https://github.com/user-attachments/assets/ff6b7db5-54ec-48b6-8787-71f3e254a444)
+
+
 
 ### Konuşma Başlatma 
 Konuşma başlatma butonu verilmiştir.
+
+
 ![konuşma-başlatma](https://github.com/user-attachments/assets/a575652b-52c5-4df4-9983-355334407e26)
+
+
 
 ### Sohbet Arayüzü
 Sprint-2 sonucu sohbet arayüzü görseldeki gibi görülmektedir.
+
+
 ![sohbet-arayüzü](https://github.com/user-attachments/assets/339c92a2-f5b3-4678-8e0d-d891382681a9)
+
+
 
 ### Sol Sütun Şablonu
 Sol sütunun şablonu, dil seçenekleri ve branş seçimleri alt alta yapılmıştır.
+
+
 ![sol-sütun-şablonu](https://github.com/user-attachments/assets/6ffcc2fd-567a-4238-a273-b53118a56c25)
+
+
 
 ### Yanlış Tahmin Sonucu Geribildirim
 Yanlış tahmin sonucu  sistemin vereceği geribildirim bu şekilde görünecektir.
+
+
 ![yanlış-tahmin-geribildirim](https://github.com/user-attachments/assets/03f1fb6d-016c-4499-a6cf-9b5d24efcc50)
+
+
 
 ### Doğru Tahmin Sonucu Geribildirim
 Doğru tahmin sonucu  sistemin vereceği geribildirim bu şekilde görünecektir.
+
+
 ![doğru-tahmin-geribildirim](https://github.com/user-attachments/assets/a34705a6-4065-44cd-b6a9-b4c36386ebea)
+
+
 
 ### Mikrofondan Ses Alma
 Mikrofondan ses alma arayüzü şekildeki gibi görünecektir.
+
+
 ![mikrofondan ses-alma](https://github.com/user-attachments/assets/f6ec50ff-0ea1-490f-abf7-bc07aa01a522)
 
 
@@ -458,26 +486,26 @@ Mikrofondan ses alma arayüzü şekildeki gibi görünecektir.
 Bu sprintte projenin temel kod yapısı üzerine eklentiler ve gelişmeler yapılması hedeflenmektedir. Farklı tıp disiplinleri için seçim imkanı sunulması, bu seçim ekranının iyi konumlanması ve buna uygun arayüz oluşturulması, yeni simülasyon başlat butonunun eklenmesi, sesli giriş özelliği eklenmesi gibi teknik açıdan projenin değer ve kalitesini artıracak, kullanım kolaylığı sağlayacak özellikler hedeflenmektedir. Paydaş iletişimi sağlanıp, proje değeri artırılması hedeflenmektedir.
 
 **Tamamlanan İşler:**  
--Projede farklı Tıp disiplinlerinin seçilmesine imkan tanıyacak “Branş Seçimi” ekranı teknik olarak oluşturuldu. 
--“Branş Seçim” ekranı sayfada doğru şekilde konumlandı ve seçim kolaylığı sağlayacak bir listeden seçme imkanı sağlandı.
--Yapay zeka modülü geliştirildi.
--Sesli giriş özelliği eklendi. Mikrofon ile alınan ses sayesinde projenin etkinliği artırıldı.
--Sesli giriş butonu arayüzde kolay erişilecek bir yere konumlandırıldı.
--Yeni simülasyon oluştur butonu eklendi. Ekran temizlenmesi gerçekleştirildi
--Sistem üzerinde karşılaşılan teknik hatalar (bug'lar) tespit edilerek projenin genel kararlılığı artırıldı.
--Arayüz için geliştirmeler yapıldı.
--Geribildirim özelliği eklendi. Kullanıcının gelişimini takip edebilmesi sağlandı.
--Consulted rolündeki kişiler ile iletişime geçilerek fikir alışverişi yapıldı.
--Ekip üyeleri projenin  ilerleyişini yakından takip etti, olumlu karşıladı ve sürece aktif şekilde dahil oldu. Proje, takım tarafından sahiplenildi ve ilerleyişi izlenip onaylandı.
--Consulted iletişimi kısmi olarak sağlandı.
+- Projede farklı Tıp disiplinlerinin seçilmesine imkan tanıyacak “Branş Seçimi” ekranı teknik olarak oluşturuldu. 
+- “Branş Seçim” ekranı sayfada doğru şekilde konumlandı ve seçim kolaylığı sağlayacak bir listeden seçme imkanı sağlandı.
+- Yapay zeka modülü geliştirildi.
+- Sesli giriş özelliği eklendi. Mikrofon ile alınan ses sayesinde projenin etkinliği artırıldı.
+- Sesli giriş butonu arayüzde kolay erişilecek bir yere konumlandırıldı.
+- Yeni simülasyon oluştur butonu eklendi. Ekran temizlenmesi gerçekleştirildi
+- Sistem üzerinde karşılaşılan teknik hatalar (bug'lar) tespit edilerek projenin genel kararlılığı artırıldı.
+- Arayüz için geliştirmeler yapıldı.
+- Geribildirim özelliği eklendi. Kullanıcının gelişimini takip edebilmesi sağlandı.
+- Consulted rolündeki kişiler ile iletişime geçilerek fikir alışverişi yapıldı.
+- Ekip üyeleri projenin  ilerleyişini yakından takip etti, olumlu karşıladı ve sürece aktif şekilde dahil oldu. Proje, takım tarafından sahiplenildi ve ilerleyişi izlenip onaylandı.
+- Consulted iletişimi kısmi olarak sağlandı.
 
 
 **Geri Bildirimler ve Sonraki Adımlar:**  
--İngilizce dil desteği sağlanacak ve yabancı kullanıcıların da hedef kitleye dahil olması sağlanacak.
--Geribildirim mekanizması geliştirilecek.
--Gelecek sprintte arayüzün işlevselliği genişletilerek son haline getirilecek.
--Hedef kitle ile iletişimde kalınmaya devam edilecek.
--Gerçek kullanıcı deneyimleri sağlanacak ve denemeler yapılacak.
+- İngilizce dil desteği sağlanacak ve yabancı kullanıcıların da hedef kitleye dahil olması sağlanacak.
+- Geribildirim mekanizması geliştirilecek.
+- Gelecek sprintte arayüzün işlevselliği genişletilerek son haline getirilecek.
+- Hedef kitle ile iletişimde kalınmaya devam edilecek.
+- Gerçek kullanıcı deneyimleri sağlanacak ve denemeler yapılacak.
 
 
 **Sprint Review Katılımcıları:**  
@@ -487,26 +515,26 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 
 **✅1. Neler İyi Gitti?**
 
--Takım içinde görev paylaşımı ve iletişim başarılıydı ekip üyeleri çatışma ve rol savaşı yaşamadılar.
--Sprint hedeflerine zamanında ulaşıldı. Hedeflenen puantaja ulaşıldı.
--Sorunlar hızlı şekilde tespit edilip çözüldü.
--Ekip motivasyonunda herhangi bir düşme yaşanmadı.
--2. Sprint projenin teknik açıdan kendini bulduğu sprint olarak not edilmiştir.
--Dokümantasyon önceki sprinte göre daha günceldi.
+- Takım içinde görev paylaşımı ve iletişim başarılıydı ekip üyeleri çatışma ve rol savaşı yaşamadılar.
+- Sprint hedeflerine zamanında ulaşıldı. Hedeflenen puantaja ulaşıldı.
+- Sorunlar hızlı şekilde tespit edilip çözüldü.
+- Ekip motivasyonunda herhangi bir düşme yaşanmadı.
+- 2. Sprint projenin teknik açıdan kendini bulduğu sprint olarak not edilmiştir.
+- Dokümantasyon önceki sprinte göre daha günceldi.
 
 
 **❌2. Neler Daha İyi Olabilirdi?**
 
--Projenin teknik açıdan çok bug içermesi zaman zaman karışıklıklara yol açtı.
--Paydaş iletişimi daha canlı olabilirdi. 
--Daha fazla geribildirim alınabilirdi.
--Performans iyileştirme ve optimizasyonlar sprint planına daha fazla dahil edilebilirdi.
+- Projenin teknik açıdan çok bug içermesi zaman zaman karışıklıklara yol açtı.
+- Paydaş iletişimi daha canlı olabilirdi. 
+- Daha fazla geribildirim alınabilirdi.
+- Performans iyileştirme ve optimizasyonlar sprint planına daha fazla dahil edilebilirdi.
  
 
 **➡️3. Gelecek İçin Neyi Değiştireceğiz?**
 
--Görevler için tamamlandı tanımını daha iyi yapacağız.
--Paydaş iletişimine çok daha fazla önem vereceğiz. Gerekirse bir iletişim kanalı oluşturacağız.
--Gerçek kullanıcı deneyimi sağlayacak ve gerekli düzeltmeleri sağlayacağız.
+- Görevler için tamamlandı tanımını daha iyi yapacağız.
+- Paydaş iletişimine çok daha fazla önem vereceğiz. Gerekirse bir iletişim kanalı oluşturacağız.
+- Gerçek kullanıcı deneyimi sağlayacak ve gerekli düzeltmeleri sağlayacağız.
 
 
