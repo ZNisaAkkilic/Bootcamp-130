@@ -278,6 +278,8 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 </details>
 
 
+<details open>
+  <summary><h1>Sprint-1</h1></summary>
 
 # Sprint-2
 ## 📝 Sprint Notları
@@ -540,4 +542,4 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 - Paydaş iletişimine çok daha fazla önem vereceğiz. Gerekirse bir iletişim kanalı oluşturacağız.
 - Gerçek kullanıcı deneyimi sağlayacak ve gerekli düzeltmeleri sağlayacağız.
 
-
+</details>
