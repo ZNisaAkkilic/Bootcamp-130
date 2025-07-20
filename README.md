@@ -422,6 +422,7 @@ Sprint Board, bu Sprint için de Trello üzerinden yönetilmiştir. Aşağıda i
 #### 📌 Trello - Kanban Görüntüsü 3  
 ![Kanban-3](https://github.com/user-attachments/assets/a635f6a6-a4ce-4d3e-bba1-8f470b063879)
 
+
 ## 📸 Ürün Ekran Görüntüleri
 
 Ürünün geliştirme sürecine dair ekran görüntüleri aşağıda sunulmuştur.Farklı sütunların görünümü, açılış ekranı, sohbet ekranı, yanlış ve doğru tahminde geribildirim mekanizmasının nasıl çalıştığı ile ilgili görseller verilmiştir. Görsellerin açıklaması da üst kısmında yer almaktadır.
@@ -429,6 +430,7 @@ Sprint Board, bu Sprint için de Trello üzerinden yönetilmiştir. Aşağıda i
 
 
 ### Açılış Ekranı
+
 Uygulamanın açılış ekranı mevcut durumda görseldeki gibi görülmektedir.
 
 
@@ -437,6 +439,7 @@ Uygulamanın açılış ekranı mevcut durumda görseldeki gibi görülmektedir.
 
 
 ### Konuşma Başlatma 
+
 Konuşma başlatma butonu verilmiştir.
 
 
@@ -445,6 +448,7 @@ Konuşma başlatma butonu verilmiştir.
 
 
 ### Sohbet Arayüzü
+
 Sprint-2 sonucu sohbet arayüzü görseldeki gibi görülmektedir.
 
 
@@ -453,6 +457,7 @@ Sprint-2 sonucu sohbet arayüzü görseldeki gibi görülmektedir.
 
 
 ### Sol Sütun Şablonu
+
 Sol sütunun şablonu, dil seçenekleri ve branş seçimleri alt alta yapılmıştır.
 
 
@@ -461,6 +466,7 @@ Sol sütunun şablonu, dil seçenekleri ve branş seçimleri alt alta yapılmı�
 
 
 ### Yanlış Tahmin Sonucu Geribildirim
+
 Yanlış tahmin sonucu  sistemin vereceği geribildirim bu şekilde görünecektir.
 
 
@@ -469,6 +475,7 @@ Yanlış tahmin sonucu  sistemin vereceği geribildirim bu şekilde görünecekt
 
 
 ### Doğru Tahmin Sonucu Geribildirim
+
 Doğru tahmin sonucu  sistemin vereceği geribildirim bu şekilde görünecektir.
 
 
@@ -477,6 +484,7 @@ Doğru tahmin sonucu  sistemin vereceği geribildirim bu şekilde görünecektir
 
 
 ### Mikrofondan Ses Alma
+
 Mikrofondan ses alma arayüzü şekildeki gibi görünecektir.
 
 
@@ -486,9 +494,11 @@ Mikrofondan ses alma arayüzü şekildeki gibi görünecektir.
 ## 👁️Sprint Review [20.07.2025]  
 
 **Sprint Hedefi:**  
+
 Bu sprintte projenin temel kod yapısı üzerine eklentiler ve gelişmeler yapılması hedeflenmektedir. Farklı tıp disiplinleri için seçim imkanı sunulması, bu seçim ekranının iyi konumlanması ve buna uygun arayüz oluşturulması, yeni simülasyon başlat butonunun eklenmesi, sesli giriş özelliği eklenmesi gibi teknik açıdan projenin değer ve kalitesini artıracak, kullanım kolaylığı sağlayacak özellikler hedeflenmektedir. Paydaş iletişimi sağlanıp, proje değeri artırılması hedeflenmektedir.
 
 **Tamamlanan İşler:**  
+
 - Projede farklı Tıp disiplinlerinin seçilmesine imkan tanıyacak “Branş Seçimi” ekranı teknik olarak oluşturuldu. 
 - “Branş Seçim” ekranı sayfada doğru şekilde konumlandı ve seçim kolaylığı sağlayacak bir listeden seçme imkanı sağlandı.
 - Yapay zeka modülü geliştirildi.
@@ -504,6 +514,7 @@ Bu sprintte projenin temel kod yapısı üzerine eklentiler ve gelişmeler yapı
 
 
 **Geri Bildirimler ve Sonraki Adımlar:**  
+
 - İngilizce dil desteği sağlanacak ve yabancı kullanıcıların da hedef kitleye dahil olması sağlanacak.
 - Geribildirim mekanizması geliştirilecek.
 - Gelecek sprintte arayüzün işlevselliği genişletilerek son haline getirilecek.
