@@ -63,6 +63,9 @@ Bakınız: [Referans](https://agile-od.com/mmdojo/9883/scrum-raci)
 ![RACI](https://github.com/user-attachments/assets/1930ae0e-918f-48b1-8a2d-34752b982c4c)
 
 ## 🙂 User Persona
+
+User Persona oluşturulmuştur.
+
 <img width="1414" height="2000" alt="PERSONA-CaseZero" src="https://github.com/user-attachments/assets/b31dca58-3568-487c-a239-ce57573dc331" />
 
 # Sprint-1
