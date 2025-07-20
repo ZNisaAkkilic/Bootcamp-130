@@ -52,7 +52,8 @@ CaseZero, tıp öğrencilerinin klinik teşhis ve hasta yönetimi becerilerini g
 
 Aşağıda, projeye ait önceliklendirilmiş işler listesinin (Product Backlog) güncel hali yer almaktadır. Backlog, sprint planlamalarında referans olarak kullanılmakta ve gereksinimlerin önceliklendirilmesini sağlamaktadır. Product Backlog kullanıcı hikayesi ve kabul kriterleri baz alınarak oluşturulmuştur.
 
-![Product Backlog Görseli](https://github.com/user-attachments/assets/47f8c4e8-cde2-4a05-b230-cd62741c57f1)
+![Product Backlog Görseli](https://github.com/user-attachments/assets/6f8ff25d-7409-45b4-8a53-ee89da4f96ed)
+
 
 ## 👥 RACI Matrisi
 
@@ -60,6 +61,9 @@ Bu matriste, geleneksel RACI modelinden farklı olarak Scrum takımındaki rolle
 Bakınız: [Referans](https://agile-od.com/mmdojo/9883/scrum-raci)
 
 ![RACI](https://github.com/user-attachments/assets/1930ae0e-918f-48b1-8a2d-34752b982c4c)
+
+## 🙂 User Persona
+<img width="1414" height="2000" alt="PERSONA-CaseZero" src="https://github.com/user-attachments/assets/b31dca58-3568-487c-a239-ce57573dc331" />
 
 # Sprint-1
 ## 📝 Sprint Notları
@@ -263,4 +267,243 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 - Dökümantasyonu sprint boyunca sürekli güncel tutacağız.
 - İletişimimizi daha da canlı tutmaya çalışacağız.
 - Günlük toplantılar için sabit bir saat ve süre belirleyeceğiz.
+
+
+
+
+
+
+# Sprint-2
+## 📝 Sprint Notları
+
+-Proje yönetimi için Trello aracı kullanılmaya devam edilmiştir.İletişim; ilk sprintteki gibi çoğunlukla Whatsapp ve MS Teams üzerinden gerçekleştirilecektir. Bu programların kullanım gerekçeleri ilk sprint notlarında açıklanmıştır.
+
+-Product Backlog üzerinde iyileştirmeler ve eklemeler yapılmıştır.
+
+-Projenin iskeletinin üstüne et ve damar yapısı oluşturulmuştur. Proje teknik olarak geliştirilmiş ve sağlamlaştırmıştır. İlk sprintte yapılan temel kod yapısı üzerine detaylı çalışmalar yapılmıştır. Sprint hedeflerine ulaşmıştır. Sprint teknik yeterlilik ve proje yönetimi alanında tatmin edici şekilde sonlanmıştır.
+
+-Takımda görev dağılımı ve rol sahiplenmesi efektif şekilde devam etmektedir. Projenin sahiplenilmesi ve çalışılması hakkında takım üyeleri özverili bir katılım sağlamaktadırlar.
+
+
+
+## 🏴󠁬󠁶󠀱󠀰󠀰󠁿Tahmin Edilen Puan ve Tamamlanan Puan
+İkinci sprintte 100 puan tahmin edilmiştir. Sprint sonunda 100 puan tamamlanmıştır. Projenin şimdiye kadar 200 puanlık kısım, yani 2/3 ‘lük kısmı tamamlanmıştır.
+
+## 💯 Puan Tamamlama Mantığı
+Proje boyunca tahmini puan 300 olarak atanmıştır. Her sprintte puan 100 olmak sureti ile çalışılması planlanmıştır.
+
+## 💼 Daily Scrum 
+Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekleştirilmiştir. Toplantı ekran görüntüleri verilmiştir.
+
+<details>
+<summary>📂 7.07.2025</summary>
+
+![07 07](https://github.com/user-attachments/assets/f33bf17f-130d-4307-86d0-ff994b2d7b78)
+
+
+</details>
+
+<details>
+<summary>📂 08.07.2025</summary>
+
+![08 07](https://github.com/user-attachments/assets/fd0c6788-e903-46c0-b404-93b80cd96413)
+
+
+</details>
+
+<details>
+<summary>📂 09.07.2025</summary>
+
+![09 07](https://github.com/user-attachments/assets/ae7285ec-5fba-44b8-bd29-d789bebb4627)
+
+
+</details>
+
+<details>
+<summary>📂 10.07.2025</summary>
+
+![10 07](https://github.com/user-attachments/assets/71107585-71ce-4e97-a7ea-64c943fbd59b)
+
+
+</details>
+
+<details>
+<summary>📂 11.07.2025</summary>
+  
+![11 07](https://github.com/user-attachments/assets/3cc98aad-8c93-47cc-ad63-0395269d1a7b)
+
+
+</details>
+
+<details>
+<summary>📂 12.07.2025</summary>
+  
+![12 07](https://github.com/user-attachments/assets/c5577aab-0ffd-49c0-8959-fb8ef04db8e3)
+
+
+</details>
+
+<details>
+<summary>📂 13.07.2025</summary>
+
+![13 07](https://github.com/user-attachments/assets/9b89473d-7779-4729-829d-58af8f8905b6)
+
+
+</details>
+
+<details>
+<summary>📂 14.07.2025</summary>
+
+![14 07](https://github.com/user-attachments/assets/409ca334-4343-4532-b41e-e056f4b52271)
+
+
+</details>
+
+<details>
+<summary>📂 15.07.2025</summary>
+
+![15 07](https://github.com/user-attachments/assets/61ec97c7-5fdf-45e9-aa1c-147b78dc2a8f)
+
+
+</details>
+
+<details>
+<summary>📂 16.07.2025</summary>
+
+![16 07](https://github.com/user-attachments/assets/44487596-ebb3-47f2-af80-6aca379870e1)
+
+
+</details>
+
+<details>
+<summary>📂 17.07.2025</summary>
+
+![17 07](https://github.com/user-attachments/assets/4f2e1ff6-123f-45cd-ae51-8e15e86043a6)
+
+
+</details>
+
+<details>
+<summary>📂 18.07.2025</summary>
+
+![18 07](https://github.com/user-attachments/assets/b915c16c-1fe4-4c2b-8389-97d4460d7018)
+
+
+</details>
+
+<details>
+<summary>📂 19.07.2025</summary>
+
+![19 07](https://github.com/user-attachments/assets/be715dc0-f69a-4b30-94db-1c08b0638c36)
+
+
+</details>
+
+
+## 📋 Sprint Board
+
+Sprint Board, bu Sprint için de Trello üzerinden yönetilmiştir. Aşağıda h ilgili  ekran görüntüleri yer almaktadır. 
+
+
+### 📸 Kanban Görüntüleri
+
+#### 📌 Trello - Kanban Görüntüsü 1  
+![Kanban-1](https://github.com/user-attachments/assets/c25751f3-a424-491d-b6ea-40583d61fb0b)
+
+#### 📌 Trello - Kanban Görüntüsü 2  
+![Kanban-2](https://github.com/user-attachments/assets/9ea8fd3b-fc3d-43f9-a47c-dd19c527a327)
+
+#### 📌 Trello - Kanban Görüntüsü 3  
+![Kanban-3](https://github.com/user-attachments/assets/a635f6a6-a4ce-4d3e-bba1-8f470b063879)
+
+## 📸 Ürün Ekran Görüntüleri
+
+Ürünün geliştirme sürecine dair ekran görüntüleri aşağıda sunulmuştur.Farklı sütunların görünümü, açılış ekranı, sohbet ekranı, yanlış ve doğru tahminde geribildirim mekanizmasının nasıl çalıştığı ile ilgili görseller verilmiştir. Görsellerin açıklaması da üst kısmında yer almaktadır.
+
+### Açılış Ekranı
+Uygulamanın açılış ekranı mevcut durumda görseldeki gibi görülmektedir.
+![açılış-ekranı](https://github.com/user-attachments/assets/ff6b7db5-54ec-48b6-8787-71f3e254a444)
+
+### Konuşma Başlatma 
+Konuşma başlatma butonu verilmiştir.
+![konuşma-başlatma](https://github.com/user-attachments/assets/a575652b-52c5-4df4-9983-355334407e26)
+
+### Sohbet Arayüzü
+Sprint-2 sonucu sohbet arayüzü görseldeki gibi görülmektedir.
+![sohbet-arayüzü](https://github.com/user-attachments/assets/339c92a2-f5b3-4678-8e0d-d891382681a9)
+
+### Sol Sütun Şablonu
+Sol sütunun şablonu, dil seçenekleri ve branş seçimleri alt alta yapılmıştır.
+![sol-sütun-şablonu](https://github.com/user-attachments/assets/6ffcc2fd-567a-4238-a273-b53118a56c25)
+
+### Yanlış Tahmin Sonucu Geribildirim
+Yanlış tahmin sonucu  sistemin vereceği geribildirim bu şekilde görünecektir.
+![yanlış-tahmin-geribildirim](https://github.com/user-attachments/assets/03f1fb6d-016c-4499-a6cf-9b5d24efcc50)
+
+### Doğru Tahmin Sonucu Geribildirim
+Doğru tahmin sonucu  sistemin vereceği geribildirim bu şekilde görünecektir.
+![doğru-tahmin-geribildirim](https://github.com/user-attachments/assets/a34705a6-4065-44cd-b6a9-b4c36386ebea)
+
+### Mikrofondan Ses Alma
+Mikrofondan ses alma arayüzü şekildeki gibi görünecektir.
+![mikrofondan ses-alma](https://github.com/user-attachments/assets/f6ec50ff-0ea1-490f-abf7-bc07aa01a522)
+
+
+## 👁️Sprint Review [05.07.2025]  
+
+**Sprint Hedefi:**  
+Bu sprintte projenin temel kod yapısı üzerine eklentiler ve gelişmeler yapılması hedeflenmektedir. Farklı tıp disiplinleri için seçim imkanı sunulması, bu seçim ekranının iyi konumlanması ve buna uygun arayüz oluşturulması, yeni simülasyon başlat butonunun eklenmesi, sesli giriş özelliği eklenmesi gibi teknik açıdan projenin değer ve kalitesini artıracak, kullanım kolaylığı sağlayacak özellikler hedeflenmektedir. Paydaş iletişimi sağlanıp, proje değeri artırılması hedeflenmektedir.
+
+**Tamamlanan İşler:**  
+-Projede farklı Tıp disiplinlerinin seçilmesine imkan tanıyacak “Branş Seçimi” ekranı teknik olarak oluşturuldu. 
+-“Branş Seçim” ekranı sayfada doğru şekilde konumlandı ve seçim kolaylığı sağlayacak bir listeden seçme imkanı sağlandı.
+-Yapay zeka modülü geliştirildi.
+-Sesli giriş özelliği eklendi. Mikrofon ile alınan ses sayesinde projenin etkinliği artırıldı.
+-Sesli giriş butonu arayüzde kolay erişilecek bir yere konumlandırıldı.
+-Yeni simülasyon oluştur butonu eklendi. Ekran temizlenmesi gerçekleştirildi
+-Sistem üzerinde karşılaşılan teknik hatalar (bug'lar) tespit edilerek projenin genel kararlılığı artırıldı.
+-Arayüz için geliştirmeler yapıldı.
+-Geribildirim özelliği eklendi. Kullanıcının gelişimini takip edebilmesi sağlandı.
+-Consulted rolündeki kişiler ile iletişime geçilerek fikir alışverişi yapıldı.
+-Ekip üyeleri projenin  ilerleyişini yakından takip etti, olumlu karşıladı ve sürece aktif şekilde dahil oldu. Proje, takım tarafından sahiplenildi ve ilerleyişi izlenip onaylandı.
+-Consulted iletişimi kısmi olarak sağlandı.
+
+
+**Geri Bildirimler ve Sonraki Adımlar:**  
+-İngilizce dil desteği sağlanacak ve yabancı kullanıcıların da hedef kitleye dahil olması sağlanacak.
+-Geribildirim mekanizması geliştirilecek.
+-Gelecek sprintte arayüzün işlevselliği genişletilerek son haline getirilecek.
+-Hedef kitle ile iletişimde kalınmaya devam edilecek.
+-Gerçek kullanıcı deneyimleri sağlanacak ve denemeler yapılacak.
+
+
+**Sprint Review Katılımcıları:**  
+Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
+
+## Sprint Retrospektif [05.07.2025]
+
+**✅1. Neler İyi Gitti?**
+
+-Takım içinde görev paylaşımı ve iletişim başarılıydı ekip üyeleri çatışma ve rol savaşı yaşamadılar.
+-Sprint hedeflerine zamanında ulaşıldı. Hedeflenen puantaja ulaşıldı.
+-Sorunlar hızlı şekilde tespit edilip çözüldü.
+-Ekip motivasyonunda herhangi bir düşme yaşanmadı.
+-2. Sprint projenin teknik açıdan kendini bulduğu sprint olarak not edilmiştir.
+-Dokümantasyon önceki sprinte göre daha günceldi.
+
+
+**❌2. Neler Daha İyi Olabilirdi?**
+
+-Projenin teknik açıdan çok bug içermesi zaman zaman karışıklıklara yol açtı.
+-Paydaş iletişimi daha canlı olabilirdi. 
+-Daha fazla geribildirim alınabilirdi.
+-Performans iyileştirme ve optimizasyonlar sprint planına daha fazla dahil edilebilirdi.
+ 
+
+**➡️3. Gelecek İçin Neyi Değiştireceğiz?**
+
+-Görevler için tamamlandı tanımını daha iyi yapacağız.
+-Paydaş iletişimine çok daha fazla önem vereceğiz. Gerekirse bir iletişim kanalı oluşturacağız.
+-Gerçek kullanıcı deneyimi sağlayacak ve gerekli düzeltmeleri sağlayacağız.
+
 
