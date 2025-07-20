@@ -68,6 +68,9 @@ User Persona oluşturulmuştur.
 
 <img width="1414" height="2000" alt="PERSONA-CaseZero" src="https://github.com/user-attachments/assets/b31dca58-3568-487c-a239-ce57573dc331" />
 
+<details open>
+  <summary><h1>Sprint-1</h1></summary>
+  
 # Sprint-1
 ## 📝 Sprint Notları
 
@@ -272,7 +275,7 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 - Günlük toplantılar için sabit bir saat ve süre belirleyeceğiz.
 
 
-
+</details>
 
 
 
