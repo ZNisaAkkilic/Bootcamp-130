@@ -3,7 +3,7 @@
 ## 🦾Takım İsmi
 Bootcamp AI-130
 
-## ⭐Takım Rolleri
+## ⭐Takım Rolleri 
 | İsim                 | Rol                    | LinkedIn                                                                                    | 
 |----------------------|------------------------|---------------------------------------------------------------------------------------------|
 | Rumeysa Nur Demirbaş | Scrum Master / Developer | [![LinkedIn](https://cdn-icons-png.flaticon.com/16/174/174857.png)](https://www.linkedin.com/in/rumeysanur) |
