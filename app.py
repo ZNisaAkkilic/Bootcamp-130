@@ -8,6 +8,7 @@ if "chat" not in st.session_state:
     st.session_state.chat = []
 
 
+
 user_input = st.text_input("Doktor:", "")
 
 
