@@ -69,9 +69,8 @@ User Persona oluşturulmuştur.
 <img width="1414" height="2000" alt="PERSONA-CaseZero" src="https://github.com/user-attachments/assets/b31dca58-3568-487c-a239-ce57573dc331" />
 
 <details open>
-  <summary><h1>Sprint-1</h1></summary>
+  <summary><h1>1️⃣Sprint-1</h1></summary>
   
-# Sprint-1
 ## 📝 Sprint Notları
 
 - Proje yönetimi için **Trello** aracı kullanılmasına karar verilmiştir.
@@ -279,7 +278,7 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 
 
 <details open>
-  <summary><h1>Sprint-1</h1></summary>
+  <summary><h1>2️⃣Sprint-2</h1></summary>
 
 # Sprint-2
 ## 📝 Sprint Notları
