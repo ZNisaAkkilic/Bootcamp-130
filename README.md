@@ -52,7 +52,7 @@ CaseZero, tıp öğrencilerinin klinik teşhis ve hasta yönetimi becerilerini g
 
 Aşağıda, projeye ait önceliklendirilmiş işler listesinin (Product Backlog) güncel hali yer almaktadır. Backlog, sprint planlamalarında referans olarak kullanılmakta ve gereksinimlerin önceliklendirilmesini sağlamaktadır. Product Backlog kullanıcı hikayesi ve kabul kriterleri baz alınarak oluşturulmuştur.
 
-![Product Backlog Görseli](https://github.com/user-attachments/assets/6f8ff25d-7409-45b4-8a53-ee89da4f96ed)
+<img width="1291" height="780" alt="image" src="https://github.com/user-attachments/assets/12b01a84-f872-4e93-8b48-188775f24f37" />
 
 
 ## 👥 RACI Matrisi
