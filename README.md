@@ -533,7 +533,7 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 - Sprint hedeflerine zamanında ulaşıldı. Hedeflenen puantaja ulaşıldı.
 - Sorunlar hızlı şekilde tespit edilip çözüldü.
 - Ekip motivasyonunda herhangi bir düşme yaşanmadı.
-- 2. Sprint projenin teknik açıdan kendini bulduğu sprint olarak not edilmiştir.
+- İkinci Sprint projenin teknik açıdan kendini bulduğu sprint olarak not edilmiştir.
 - Dokümantasyon önceki sprinte göre daha günceldi.
 
 
