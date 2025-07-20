@@ -483,7 +483,7 @@ Mikrofondan ses alma arayüzü şekildeki gibi görünecektir.
 ![mikrofondan ses-alma](https://github.com/user-attachments/assets/f6ec50ff-0ea1-490f-abf7-bc07aa01a522)
 
 
-## 👁️Sprint Review [05.07.2025]  
+## 👁️Sprint Review [20.07.2025]  
 
 **Sprint Hedefi:**  
 Bu sprintte projenin temel kod yapısı üzerine eklentiler ve gelişmeler yapılması hedeflenmektedir. Farklı tıp disiplinleri için seçim imkanı sunulması, bu seçim ekranının iyi konumlanması ve buna uygun arayüz oluşturulması, yeni simülasyon başlat butonunun eklenmesi, sesli giriş özelliği eklenmesi gibi teknik açıdan projenin değer ve kalitesini artıracak, kullanım kolaylığı sağlayacak özellikler hedeflenmektedir. Paydaş iletişimi sağlanıp, proje değeri artırılması hedeflenmektedir.
@@ -514,7 +514,7 @@ Bu sprintte projenin temel kod yapısı üzerine eklentiler ve gelişmeler yapı
 **Sprint Review Katılımcıları:**  
 Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 
-## Sprint Retrospektif [05.07.2025]
+## Sprint Retrospektif [20.07.2025]
 
 **✅1. Neler İyi Gitti?**
 
