@@ -276,13 +276,13 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 # Sprint-2
 ## 📝 Sprint Notları
 
--Proje yönetimi için Trello aracı kullanılmaya devam edilmiştir.İletişim; ilk sprintteki gibi çoğunlukla Whatsapp ve MS Teams üzerinden gerçekleştirilecektir. Bu programların kullanım gerekçeleri ilk sprint notlarında açıklanmıştır.
+- Proje yönetimi için Trello aracı kullanılmaya devam edilmiştir.İletişim; ilk sprintteki gibi çoğunlukla Whatsapp ve MS Teams üzerinden gerçekleştirilecektir. Bu programların kullanım gerekçeleri ilk sprint notlarında açıklanmıştır.
 
--Product Backlog üzerinde iyileştirmeler ve eklemeler yapılmıştır.
+- Product Backlog üzerinde iyileştirmeler ve eklemeler yapılmıştır.
 
--Projenin iskeletinin üstüne et ve damar yapısı oluşturulmuştur. Proje teknik olarak geliştirilmiş ve sağlamlaştırmıştır. İlk sprintte yapılan temel kod yapısı üzerine detaylı çalışmalar yapılmıştır. Sprint hedeflerine ulaşmıştır. Sprint teknik yeterlilik ve proje yönetimi alanında tatmin edici şekilde sonlanmıştır.
+- Projenin iskeletinin üstüne et ve damar yapısı oluşturulmuştur. Proje teknik olarak geliştirilmiş ve sağlamlaştırmıştır. İlk sprintte yapılan temel kod yapısı üzerine detaylı çalışmalar yapılmıştır. Sprint hedeflerine ulaşmıştır. Sprint teknik yeterlilik ve proje yönetimi alanında tatmin edici şekilde sonlanmıştır.
 
--Takımda görev dağılımı ve rol sahiplenmesi efektif şekilde devam etmektedir. Projenin sahiplenilmesi ve çalışılması hakkında takım üyeleri özverili bir katılım sağlamaktadırlar.
+- Takımda görev dağılımı ve rol sahiplenmesi efektif şekilde devam etmektedir. Projenin sahiplenilmesi ve çalışılması hakkında takım üyeleri özverili bir katılım sağlamaktadırlar.
 
 
 
@@ -402,7 +402,7 @@ Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekle
 
 ## 📋 Sprint Board
 
-Sprint Board, bu Sprint için de Trello üzerinden yönetilmiştir. Aşağıda h ilgili  ekran görüntüleri yer almaktadır. 
+Sprint Board, bu Sprint için de Trello üzerinden yönetilmiştir. Aşağıda ilgili  ekran görüntüleri yer almaktadır. 
 
 
 ### 📸 Kanban Görüntüleri
