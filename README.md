@@ -280,7 +280,6 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 <details open>
   <summary><h1>2️⃣Sprint-2</h1></summary>
 
-# Sprint-2
 ## 📝 Sprint Notları
 
 - Proje yönetimi için Trello aracı kullanılmaya devam edilmiştir.İletişim; ilk sprintteki gibi çoğunlukla Whatsapp ve MS Teams üzerinden gerçekleştirilecektir. Bu programların kullanım gerekçeleri ilk sprint notlarında açıklanmıştır.
