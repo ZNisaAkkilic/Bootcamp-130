@@ -521,3 +521,13 @@ elif st.session_state.page == "simulation":
 # --- FOOTER (Alt Bilgi) ---
 st.markdown("---")
 st.markdown(f"<p style='text-align: center; color: #6c757d; font-size: 0.85rem;'>{loc.get('footer_text', 'AI Doktor Simülatörü - Eğitim Amaçlı Bir Uygulamadır')}</p>", unsafe_allow_html=True)
+
+def get_ai_response(user_input):
+    """AI'dan gelen yanıtı döndüren yardımcı fonksiyon."""
+    try:
+        chat = model.start_chat(history=st.session_state.conversation)
+        reply = chat.send_message(user_input).text
+        return reply
+    except Exception as e:
+        st.error(f"{loc.get('error_model_response', 'Modelden cevap alınırken hata oluştu:')} {e}")
+        return loc.get('error_fallback_response', "AI'dan yanıt alınamadı. Lütfen tekrar deneyin.")
