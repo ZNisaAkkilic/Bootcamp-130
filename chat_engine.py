@@ -1,4 +1,5 @@
 import google.generativeai as genai
+from groq import Groq
 import streamlit as st
 import speech_recognition as sr
 import random
@@ -7,9 +8,11 @@ import json
 import os
 from PIL import Image
 
-# API Key buraya
-genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-
+try:
+    groq_client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+except Exception as e:
+    st.error(f"Groq istemcisi başlatılırken hata oluştu: {e}")
+    st.stop()
 
 # --- Session State Başlangıç Değerleri (Uygulama Çalışırken Her Zaman Tanımlı Olmalı) ---
 if "page" not in st.session_state:
@@ -59,12 +62,10 @@ def load_locales(lang_code):
 # Mevcut dili yükle
 loc = load_locales(st.session_state.current_language)
 
-# --- Model Tanımı ---
 try:
-    model = genai.GenerativeModel("models/gemini-1.5-flash")
+    groq_client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 except Exception as e:
-    st.error(f"{loc.get('error_model_load', 'Model yüklenirken bir hata oluştu:')} {e}")
-    st.warning(loc.get('warning_model_name', 'Lütfen genai.GenerativeModel() içinde doğru model adını kullandığınızdan emin olun.'))
+    st.error(f"Groq istemcisi başlatılırken hata oluştu: {e}. Lütfen Streamlit Secrets ayarlarınızı kontrol edin.")
     st.stop()
 
 # --- Yardımcı Fonksiyonlar ---
@@ -340,12 +341,21 @@ def simulation_page():
     st.markdown("---")
 
     def handle_send_message():
-        """Sohbet gönderme işlemini yürüten yardımcı fonksiyon"""
+        """Sohbet gönderme işlemini yürüten yardımcı fonksiyon (Groq için güncellendi)"""
         if st.session_state.input_text.strip():
             input_to_process = st.session_state.input_text
-            st.session_state.input_text = "" # Input kutusunu temizle
+            st.session_state.input_text = ""
 
-            # Teşhis anahtar kelimelerini birden fazla dilde kontrol et
+            # Groq'un beklediği {"role": ..., "content": ...} formatına dönüştür.
+            def convert_history_for_api(conversation_history):
+                messages = []
+                for msg in conversation_history:
+                    content = msg["parts"][0]
+                    role = "assistant" if msg["role"] == "model" else msg["role"]
+                    messages.append({"role": role, "content": content})
+                return messages
+
+            # Teşhis anahtar kelimelerini kontrol et
             diagnosis_keywords = ["tanım:", "diagnosis:", "تشخيص:"]
             is_diagnosis_attempt = False
             tahmin = ""
@@ -355,45 +365,40 @@ def simulation_page():
                     is_diagnosis_attempt = True
                     break
 
+            # --- TEŞHİS GİRİŞİMİ MANTIĞI (GROQ İÇİN GÜNCELLENDİ) ---
             if is_diagnosis_attempt:
-                st.session_state.conversation.append({"role": "user", "parts": [f"**{loc.get('doctor_label', 'Doktor')}:** {input_to_process}"]})
+                st.session_state.conversation.append(
+                    {"role": "user", "parts": [f"**{loc.get('doctor_label', 'Doktor')}:** {input_to_process}"]})
 
                 with st.spinner(loc.get('processing_diagnosis', "Tanı değerlendiriliyor...")):
-                    chat_for_diagnosis = model.start_chat(history=st.session_state.conversation)
-                    
-                    ai_lang_code_for_prompt = ""
-                    if st.session_state.current_language == "tr":
-                        ai_lang_code_for_prompt = "Türkçe"
-                    elif st.session_state.current_language == "en":
-                        ai_lang_code_for_prompt = "English"
-                    elif st.session_state.current_language == "ar":
-                        ai_lang_code_for_prompt = "العربية"
-
-
                     if st.session_state.tahmin_hakki > 0:
                         st.session_state.tahmin_hakki -= 1
 
-                        if st.session_state.tahmin_hakki == 0:
-                            diagnosis_prompt = loc.get("diagnosis_prompt_final", "").format(
-                                guess=tahmin, AI_LANG=ai_lang_code_for_prompt
-                            )
-                        else:
-                            diagnosis_prompt = loc.get("diagnosis_prompt_initial", "").format(
-                                guess=tahmin, AI_LANG=ai_lang_code_for_prompt
-                            )
+                        ai_lang_code_for_prompt = st.session_state.current_language
+                        prompt_key = "diagnosis_prompt_final" if st.session_state.tahmin_hakki == 0 else "diagnosis_prompt_initial"
+                        diagnosis_prompt_text = loc.get(prompt_key, "").format(guess=tahmin,
+                                                                               AI_LANG=ai_lang_code_for_prompt)
+
+                        # Mevcut sohbeti ve özel teşhis sorusunu API'ye gönder
+                        messages_for_api = convert_history_for_api(st.session_state.conversation)
+                        messages_for_api.append({"role": "user", "content": diagnosis_prompt_text})
 
                         try:
-                            diagnosis_response_raw = chat_for_diagnosis.send_message(diagnosis_prompt).text
+                            chat_completion = groq_client.chat.completions.create(
+                                messages=messages_for_api,
+                                model="llama3-8b-8192"
+                            )
+                            diagnosis_response_raw = chat_completion.choices[0].message.content
 
-                            correct_diagnosis_phrase_lower = loc.get("diagnosis_prompt_correct", "Doğru Teşhis!").lower()
-                            is_correct_diagnosis = diagnosis_response_raw.lower().startswith(correct_diagnosis_phrase_lower) # Kendi yanıtımızdaki "Doğru Teşhis!" ifadesini kontrol et
+                            # ... (Loglama ve mesaj gösterme mantığı aynı kalıyor) ...
+                            correct_diagnosis_phrase_lower = loc.get("diagnosis_prompt_correct",
+                                                                     "Doğru Teşhis!").lower()
+                            is_correct_diagnosis = diagnosis_response_raw.lower().startswith(
+                                correct_diagnosis_phrase_lower)
 
-                            if "logs" not in st.session_state:
-                                st.session_state.logs = []
-
+                            if "logs" not in st.session_state: st.session_state.logs = []
                             st.session_state.logs.append({
-                                "timestamp": str(datetime.datetime.now()),
-                                "guess": tahmin,
+                                "timestamp": str(datetime.datetime.now()), "guess": tahmin,
                                 "actual_ai_response": diagnosis_response_raw,
                                 "result": "Doğru Teşhis" if is_correct_diagnosis else "Yanlış Teşhis",
                                 "branch": st.session_state.selected_branch_display_name,
@@ -410,22 +415,30 @@ def simulation_page():
                                     st.session_state.system_message = f"*{loc.get('diagnosis_wrong_remaining', 'Yanlış teşhis. Kalan tahmin hakkınız:')} {st.session_state.tahmin_hakki}*\n\n{diagnosis_response_raw}"
 
                         except Exception as e:
-                            st.error(f"{loc.get('error_model_response', 'Modelden cevap alınırken hata oluştu:')} {e}")
-                            st.session_state.system_message = loc.get('system_message_diagnosis_error', "Sistem Mesajı: Tanı değerlendirmesi sırasında bir hata oluştu.")
-
+                            st.error(f"Groq API ile tanı değerlendirilirken hata oluştu: {e}")
+                            st.session_state.system_message = "Sistem Mesajı: Tanı değerlendirmesi sırasında bir hata oluştu."
                         st.rerun()
                     else:
                         st.session_state.system_message = loc.get('no_more_guesses', "Tahmin hakkınız kalmadı.")
                         st.rerun()
 
+            # --- NORMAL SOHBET MANTIĞI (GROQ İÇİN GÜNCELLENDİ) ---
             else:
-                st.session_state.conversation.append({"role": "user", "parts": [f"**{loc.get('doctor_label', 'Doktor')}:** {input_to_process}"]})
+                st.session_state.conversation.append(
+                    {"role": "user", "parts": [f"**{loc.get('doctor_label', 'Doktor')}:** {input_to_process}"]})
 
                 with st.spinner(loc.get('waiting_for_patient_response', "Hastanın yanıtı bekleniyor...")):
-                    chat = model.start_chat(history=st.session_state.conversation)
-                    reply = chat.send_message(input_to_process).text
-
-                st.session_state.conversation.append({"role": "model", "parts": [f"**{loc.get('patient_label', 'Hasta')}:** {reply}"]})
+                    messages_for_api = convert_history_for_api(st.session_state.conversation)
+                    try:
+                        chat_completion = groq_client.chat.completions.create(
+                            messages=messages_for_api,
+                            model="llama3-70b-8192"
+                        )
+                        reply = chat_completion.choices[0].message.content
+                        st.session_state.conversation.append(
+                            {"role": "model", "parts": [f"**{loc.get('patient_label', 'Hasta')}:** {reply}"]})
+                    except Exception as e:
+                        st.error(f"Groq API'den yanıt alınırken bir hata oluştu: {e}")
                 st.rerun()
 
     st.markdown("---")
