@@ -30,13 +30,13 @@ if "system_message" not in st.session_state:
 if "logs" not in st.session_state:
     st.session_state.logs = []
 if "last_branch" not in st.session_state:
-    st.session_state.last_branch = "" # Başlangıçta boş olmalı ki ilk branş seçiminde prompt oluşsun
+    st.session_state.last_branch = ""  # Başlangıçta boş olmalı ki ilk branş seçiminde prompt oluşsun
 if "current_language" not in st.session_state:
-    st.session_state.current_language = "tr" # Varsayılan dil Türkçe
+    st.session_state.current_language = "tr"  # Varsayılan dil Türkçe
 if "dark_mode" not in st.session_state:
-    st.session_state.dark_mode = False # Varsayılan olarak karanlık mod kapalı
+    st.session_state.dark_mode = False  # Varsayılan olarak karanlık mod kapalı
 if "is_new_simulation" not in st.session_state:
-    st.session_state.is_new_simulation = True # Yeni simülasyonu tetiklemek için flag
+    st.session_state.is_new_simulation = True  # Yeni simülasyonu tetiklemek için flag
 
 # --- Sayfa Yapılandırması ---
 st.set_page_config(
@@ -45,6 +45,7 @@ st.set_page_config(
     layout="centered",
     initial_sidebar_state="expanded"
 )
+
 
 # --- Dil Dosyalarını Yükleme Fonksiyonu ---
 @st.cache_data(show_spinner=False)
@@ -59,6 +60,7 @@ def load_locales(lang_code):
         st.error(f"Dil dosyası hatalı: locales/{lang_code}.json. Lütfen JSON formatını kontrol edin.")
         return {}
 
+
 # Mevcut dili yükle
 loc = load_locales(st.session_state.current_language)
 
@@ -67,6 +69,7 @@ try:
 except Exception as e:
     st.error(f"Groq istemcisi başlatılırken hata oluştu: {e}. Lütfen Streamlit Secrets ayarlarınızı kontrol edin.")
     st.stop()
+
 
 # --- Yardımcı Fonksiyonlar ---
 def sesli_komut_al():
@@ -82,69 +85,199 @@ def sesli_komut_al():
             elif st.session_state.current_language == "en":
                 lang_code = "en-US"
             elif st.session_state.current_language == "ar":
-                lang_code = "ar-SA" # Arapça için genel bir kod, bölgeye göre değişebilir
-            
+                lang_code = "ar-SA"  # Arapça için genel bir kod, bölgeye göre değişebilir
+
             text = r.recognize_google(audio, language=lang_code)
             st.success(f"{loc.get('voice_input_recognized', 'Tanınan metin:')} {text}")
             return text
         except sr.UnknownValueError:
             st.error(loc.get('voice_input_unknown', 'Ne dediğinizi anlayamadım.'))
         except sr.RequestError:
-            st.error(loc.get('voice_input_api_error', 'Konuşma tanıma servisine ulaşılamadı. İnternet bağlantınızı kontrol edin.'))
+            st.error(loc.get('voice_input_api_error',
+                             'Konuşma tanıma servisine ulaşılamadı. İnternet bağlantınızı kontrol edin.'))
     return ""
+
 
 # --- Tema (Dark Mode) Ayarları ---
 def apply_theme():
     st.markdown(
         f"""
         <style>
+        /* Ana Uygulama Arka Planı ve Metin Rengi */
         .stApp {{
-            background-color: {'#1E1E1E' if st.session_state.dark_mode else '#F0F2F6'};
+            background-color: {'#121212' if st.session_state.dark_mode else '#F0F2F6'}; /* Daha koyu, modern siyah */
+            color: {'#E0E0E0' if st.session_state.dark_mode else '#333333'}; /* Açık gri metin */
+        }}
+
+        /* Header/Title Rengi */
+        h1, h2, h3, h4, h5, h6, .st-emotion-cache-nahz7x {{
             color: {'#FFFFFF' if st.session_state.dark_mode else '#333333'};
         }}
-        .st-emotion-cache-nahz7x {{ /* Header/Title color */
-            color: {'#FFFFFF' if st.session_state.dark_mode else '#333333'};
+
+        /* Genel Markdown Metinleri (p, li) */
+        .stMarkdown p, .stMarkdown li {{
+            color: {'#E0E0E0' if st.session_state.dark_mode else '#333333'};
         }}
-        /* Specific adjustments for chat messages */
+
+        /* --- SİDEBAR STİLLERİ --- */
+
+        /* Sidebar'ın Ana Kapsayıcısı ve İçeriği (data-testid ile daha güvenilir hedefleme) */
+        [data-testid="stSidebarV1"] {{
+            background-color: {'#1E1E1E !important' if st.session_state.dark_mode else '#FFFFFF !important'};
+            color: {'#E0E0E0 !important' if st.session_state.dark_mode else '#000000 !important'}; /* BURASI GÜNCELLENDİ */
+        }}
+
+        /* Sidebar İçeriği Kapsayıcısı */
+        [data-testid="stSidebarContent"] {{
+            background-color: {'#1E1E1E !important' if st.session_state.dark_mode else '#FFFFFF !important'};
+            color: {'#E0E0E0 !important' if st.session_state.dark_mode else '#000000 !important'}; /* BURASI GÜNCELLENDİ */
+        }}
+
+        /* Sidebar içindeki tüm elementler için genel metin rengini zorla */
+        [data-testid="stSidebarV1"] *,
+        [data-testid="stSidebarContent"] * {{
+            color: {'#E0E0E0 !important' if st.session_state.dark_mode else '#000000 !important'}; /* BURASI GÜNCELLENDİ */
+            /* Arkaplanı yalnızca ihtiyaç duyulan yerlerde ayarla */
+        }}
+
+        /* Sidebar'daki tüm başlıklar */
+        [data-testid="stSidebarV1"] h1,
+        [data-testid="stSidebarV1"] h2,
+        [data-testid="stSidebarV1"] h3,
+        [data-testid="stSidebarV1"] h4,
+        [data-testid="stSidebarV1"] h5,
+        [data-testid="stSidebarV1"] h6 {{
+            color: {'#FFFFFF !important' if st.session_state.dark_mode else '#000000 !important'}; /* BURASI GÜNCELLENDİ */
+        }}
+
+        /* Sidebar'daki Etiketler (genel) */
+        [data-testid="stSidebarV1"] .stMarkdown label p,
+        [data-testid="stSidebarV1"] label span {{
+            color: {'#E0E0E0 !important' if st.session_state.dark_mode else '#000000 !important'}; /* BURASI GÜNCELLENDİ */
+        }}
+
+        /* Sidebar'daki Radio Butonları - Metin ve Arkaplan */
+        [data-testid="stSidebarV1"] .stRadio > label {{
+            color: {'#E0E0E0 !important' if st.session_state.dark_mode else '#000000 !important'}; /* BURASI GÜNCELLENDİ */
+        }}
+        [data-testid="stSidebarV1"] .stRadio > div[role="radiogroup"] > label > div[data-testid="stConfiguredRFE"] {{ /* Radio buton yuvarlağı dışı */
+            background-color: {'#3A3A3A !important' if st.session_state.dark_mode else 'inherit'};
+            border-color: {'#555555 !important' if st.session_state.dark_mode else 'inherit'};
+        }}
+        [data-testid="stSidebarV1"] .stRadio > div[role="radiogroup"] > label > div[data-testid="stConfiguredRFE"] > div {{ /* Radio buton içi */
+            background-color: {'#66BB6A !important' if st.session_state.dark_mode else 'inherit'};
+        }}
+
+
+        /* Sidebar'daki Selectbox - Metin ve Arkaplan */
+        [data-testid="stSidebarV1"] .stSelectbox > label {{
+            color: {'#E0E0E0 !important' if st.session_state.dark_mode else '#000000 !important'}; /* BURASI GÜNCELLENDİ */
+        }}
+        [data-testid="stSidebarV1"] .stSelectbox > div > div[data-testid="stSelectbox"] {{
+            background-color: {'#2A2A2A !important' if st.session_state.dark_mode else '#FFFFFF !important'};
+            color: {'#E0E0E0 !important' if st.session_state.dark_mode else '#000000 !important'}; /* BURASI GÜNCELLENDİ */
+            border: 1px solid {'#444444 !important' if st.session_state.dark_mode else '#CCCCCC !important'};
+        }}
+        /* Selectbox açılır menü arkaplanı ve öğe renkleri (genel olarak) */
+        .st-emotion-cache-cnbvte {{ /* Selectbox açılır menü arkaplanı */
+            background-color: {'#1E1E1E !important' if st.session_state.dark_mode else '#FFFFFF !important'};
+        }}
+        .st-emotion-cache-cnbvte li {{ /* Selectbox açılır menü öğeleri metin rengi */
+            color: {'#E0E0E0 !important' if st.session_state.dark_mode else '#000000 !important'}; /* BURASI GÜNCELLENDİ */
+        }}
+        .st-emotion-cache-cnbvte li:hover {{ /* Selectbox açılır menü öğeleri hover rengi */
+            background-color: {'#3A3A3A !important' if st.session_state.dark_mode else '#F0F0F0 !important'};
+        }}
+
+        /* Sidebar'daki Toggle butonu */
+        [data-testid="stSidebarV1"] .st-emotion-cache-gq0y6b {{ /* toggle anahtarı */
+            background-color: {'#4CAF50 !important' if st.session_state.dark_mode else '#CCCCCC !important'};
+        }}
+        [data-testid="stSidebarV1"] .st-emotion-cache-gq0y6b[data-checked="true"] {{
+            background-color: {'#66BB6A !important' if st.session_state.dark_mode else '#007bff !important'};
+        }}
+
+        /* Sidebar'daki butonlar */
+        [data-testid="stSidebarV1"] .stButton > button {{
+            color: {'#FFFFFF !important' if st.session_state.dark_mode else '#333333 !important'};
+            background-color: {'#4CAF50 !important' if st.session_state.dark_mode else '#E1E1E1 !important'};
+            border-color: {'#4CAF50 !important' if st.session_state.dark_mode else '#CCCCCC !important'};
+        }}
+        [data-testid="stSidebarV1"] .stButton > button:hover {{
+            background-color: {'#66BB6A !important' if st.session_state.dark_mode else '#D1D1D1 !important'};
+            border-color: {'#66BB6A !important' if st.session_state.dark_mode else '#BBBBBB !important'};
+        }}
+        /* Sidebar'daki yatay çizgiler */
+        [data-testid="stSidebarV1"] hr {{
+            border-top: 1px solid {'#3A3A3A !important' if st.session_state.dark_mode else '#CCCCCC !important'};
+        }}
+
+
+        /* --- DİĞER KOMPONENT STİLLERİ (Mevcut kodları koru) --- */
+        /* Sohbet Mesajları */
         .stChatMessage.st-chat-message-user {{
-            background-color: {'#4A4A4A' if st.session_state.dark_mode else '#E6F3FF'}; /* Example user message background */
-            color: {'#FFFFFF' if st.session_state.dark_mode else '#333333'};
+            background-color: {'#2A2A2A' if st.session_state.dark_mode else '#E6F3FF'};
+            color: {'#E0E0E0' if st.session_state.dark_mode else '#333333'};
         }}
         .stChatMessage.st-chat-message-assistant {{
-            background-color: {'#3A3A3A' if st.session_state.dark_mode else '#F0F0F0'}; /* Example assistant message background */
-            color: {'#FFFFFF' if st.session_state.dark_mode else '#333333'};
+            background-color: {'#3A3A3A' if st.session_state.dark_mode else '#F0F0F0'};
+            color: {'#E0E0E0' if st.session_state.dark_mode else '#333333'};
         }}
+
+        /* Alert/Info/Warning Kutuları */
         .stAlert {{
-            background-color: {'#333333' if st.session_state.dark_mode else '#e7f3ff'};
-            color: {'#FFFFFF' if st.session_state.dark_mode else '#0c5460'};
+            background-color: {'#1F2937' if st.session_state.dark_mode else '#e7f3ff'};
+            color: {'#E0E0E0' if st.session_state.dark_mode else '#0c5460'};
+            border-left: 5px solid {'#4CAF50' if st.session_state.dark_mode else '#28a745'};
         }}
-        .stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown p, .stMarkdown li {{
-            color: {'#FFFFFF' if st.session_state.dark_mode else '#333333'};
+        .stAlert.info-alert, .st-emotion-cache-1fzhx90.e1f1d6gn4 {{
+            background-color: {'#1F2937' if st.session_state.dark_mode else '#e7f3ff'};
+            color: {'#E0E0E0' if st.session_state.dark_mode else '#0c5460'};
+            border-left: 5px solid {'#3498DB' if st.session_state.dark_mode else '#007bff'};
         }}
-        /* Adjustments for info/warning boxes if needed */
-        .st-emotion-cache-1fzhx90.e1f1d6gn4 {{ /* st.info box */
-            background-color: {'#333333' if st.session_state.dark_mode else '#e7f3ff'};
-            color: {'#FFFFFF' if st.session_state.dark_mode else '#0c5460'};
+        .stAlert.warning-alert, .st-emotion-cache-16p7f6y.e1f1d6gn4 {{
+            background-color: {'#1F2937' if st.session_state.dark_mode else '#fff3cd'};
+            color: {'#E0E0E0' if st.session_state.dark_mode else '#856404'};
+            border-left: 5px solid {'#FFC107' if st.session_state.dark_mode else '#ffc107'};
         }}
-        .st-emotion-cache-16p7f6y.e1f1d6gn4 {{ /* st.warning box */
-            background-color: {'#333333' if st.session_state.dark_mode else '#fff3cd'};
-            color: {'#FFFFFF' if st.session_state.dark_mode else '#856404'};
+        .stAlert.error-alert, .st-emotion-cache-10kls2b.e1f1d6gn4 {{
+            background-color: {'#1F2937' if st.session_state.dark_mode else '#f8d7da'};
+            color: {'#E0E0E0' if st.session_state.dark_mode else '#721c24'};
+            border-left: 5px solid {'#E74C3C' if st.session_state.dark_mode else '#dc3545'};
         }}
-        /* Style for the text input in dark mode */
+        .stAlert p, .stAlert span,
+        .st-emotion-cache-1fzhx90.e1f1d6gn4 p, .st-emotion-cache-1fzhx90.e1f1d6gn4 span,
+        .st-emotion-cache-16p7f6y.e1f1d6gn4 p, .st-emotion-cache-16p7f6y.e1f1d6gn4 span,
+        .st-emotion-cache-10kls2b.e1f1d6gn4 p, .st-emotion-cache-10kls2b.e1f1d6gn4 span {{
+            color: {'#E0E0E0 !important' if st.session_state.dark_mode else 'inherit'};
+        }}
+
+        /* Metin Giriş Alanları (st.text_input) */
         .stTextInput > div > div > input {{
-            color: {'#FFFFFF' if st.session_state.dark_mode else '#333333'}; /* Text color */
-            background-color: {'#444444' if st.session_state.dark_mode else '#FFFFFF'}; /* Background color */
-            border: 1px solid {'#666666' if st.session_state.dark_mode else '#CCCCCC'}; /* Border color */
+            color: {'#E0E0E0' if st.session_state.dark_mode else '#333333'};
+            background-color: {'#2A2A2A' if st.session_state.dark_mode else '#FFFFFF'};
+            border: 1px solid {'#444444' if st.session_state.dark_mode else '#CCCCCC'};
         }}
-        /* Style for the send button in dark mode */
-        .stButton > button {{
+        .stTextInput > div > div > input:focus {{
+            border-color: {'#66BB6A' if st.session_state.dark_mode else '#66BB6A'};
+            box-shadow: 0 0 0 0.2rem {'rgba(102, 187, 106, 0.25)' if st.session_state.dark_mode else 'rgba(102, 187, 106, 0.25)'};
+        }}
+
+        /* Butonlar (st.button, st.form_submit_button) */
+        .stButton > button, .stDownloadButton > button {{
             color: {'#FFFFFF' if st.session_state.dark_mode else '#333333'};
-            background-color: {'#555555' if st.session_state.dark_mode else '#E1E1E1'};
-            border-color: {'#777777' if st.session_state.dark_mode else '#CCCCCC'};
+            background-color: {'#4CAF50' if st.session_state.dark_mode else '#E1E1E1'};
+            border-color: {'#4CAF50' if st.session_state.dark_mode else '#CCCCCC'};
         }}
         .stButton > button:hover {{
-            background-color: {'#777777' if st.session_state.dark_mode else '#D1D1D1'};
+            background-color: {'#66BB6A' if st.session_state.dark_mode else '#D1D1D1'};
+            border-color: {'#66BB6A' if st.session_state.dark_mode else '#BBBBBB'};
         }}
+        /* Genel kenar çizgileri (hr) */
+        hr {{
+            border-top: 1px solid {'#3A3A3A' if st.session_state.dark_mode else '#CCCCCC'};
+        }}
+
         </style>
         """,
         unsafe_allow_html=True
@@ -153,7 +286,7 @@ def apply_theme():
 # --- Sidebar Ortak Bölüm (Dil ve Tema Seçimi) ---
 def render_sidebar_common_sections():
     st.sidebar.markdown("---")
-    
+
     # Dil Seçimi
     st.sidebar.header(loc.get('sidebar_language_selection_title', "Dil Seçimi"))
     language_options = {
@@ -161,10 +294,10 @@ def render_sidebar_common_sections():
         "en": loc.get('language_english', "İngilizce"),
         "ar": loc.get('language_arabic', "Arapça")
     }
-    
+
     display_languages = list(language_options.values())
     current_lang_display_name = language_options.get(st.session_state.current_language, "Türkçe")
-    
+
     try:
         current_lang_index = display_languages.index(current_lang_display_name)
     except ValueError:
@@ -183,11 +316,13 @@ def render_sidebar_common_sections():
                 st.session_state.current_language = code
                 st.rerun()
                 break
-    
+
     st.sidebar.markdown("---")
 
     # Tema Seçimi (Karanlık Mod)
-    st.sidebar.header(loc.get("home_page_dark_mode_toggle", "Tema Seçimi") if st.session_state.page == "home" else loc.get("chat_page_dark_mode_toggle", "Tema Seçimi"))
+    st.sidebar.header(
+        loc.get("home_page_dark_mode_toggle", "Tema Seçimi") if st.session_state.page == "home" else loc.get(
+            "chat_page_dark_mode_toggle", "Tema Seçimi"))
     dark_mode_on = st.sidebar.checkbox(
         loc.get('dark_mode_toggle', '🌙 Karanlık Mod'),
         value=st.session_state.dark_mode,
@@ -197,56 +332,73 @@ def render_sidebar_common_sections():
         st.session_state.dark_mode = dark_mode_on
         st.rerun()
 
-    apply_theme() # Tema ayarlarını uygula
-    
+    apply_theme()  # Tema ayarlarını uygula
+
+
 # --- Ana Sayfa (HOME PAGE) Fonksiyonu ---
 def home_page():
-    render_sidebar_common_sections() # Ortak sidebar öğelerini render et
-    
+    render_sidebar_common_sections()  # Ortak sidebar öğelerini render et
+
     st.title(loc.get("app_title", "AI Doktor Simülatörü"))
     st.markdown("---")
 
     col1, col2 = st.columns([1, 2])
     with col1:
         try:
-            image_path = "assets/welcome_image.png.avif"
+            # Yeni görsel dosya yolu ve adı
+            image_path = "assets/steteskop.jpg"
+
             if os.path.exists(image_path):
                 image = Image.open(image_path)
-                st.image(image, use_column_width=True)
+                st.image(image, use_container_width=True)
             else:
+                # Dosya bulunamazsa sembolü göster
                 st.markdown("<h1>🩺</h1>", unsafe_allow_html=True)
+                st.warning(
+                    loc.get("image_load_error",
+                            f"Görsel yüklenirken hata oluştu: '{image_path}' dosyası bulunamadı. Dosyanın varlığını ve formatını kontrol edin."))
         except Exception as e:
-            st.warning(f"Görsel yüklenirken hata oluştu: {e}. 'assets/welcome_image.png' dosyasının varlığını ve formatını kontrol edin.")
+            # Görsel yüklenirken başka bir hata oluşursa sembolü ve hatayı göster
             st.markdown("<h1>🩺</h1>", unsafe_allow_html=True)
+            st.warning(
+                loc.get("image_load_error",
+                        f"Görsel yüklenirken hata oluştu: {e}. Lütfen dosyanın formatını ve bozuk olup olmadığını kontrol edin."))
 
     with col2:
         st.subheader(loc.get("welcome_header", "Merhaba!"))
-        st.markdown(loc.get("welcome_text", "Bu simülatör, tıp öğrencilerinin ve sağlık alanına ilgi duyanların teşhis koyma becerilerini geliştirmeleri için yapay zeka destekli bir sanal hasta sunar. Yapay zeka ile konuşarak semptomları ve hastanın hikayesini öğrenmeli, ardından doğru tanıyı koymalısınız."))
+        st.markdown(loc.get("welcome_text",
+                            "Bu simülatör, tıp öğrencilerinin ve sağlık alanına ilgi duyanların teşhis koyma becerilerini geliştirmeleri için yapay zeka destekli bir sanal hasta sunar. Yapay zeka ile konuşarak semptomları ve hastanın hikayesini öğrenmeli, ardından doğru tanıyı koymalısınız."))
 
     st.markdown("---")
     st.header(loc.get("how_it_works_header", "Nasıl Çalışır?"))
-    st.markdown(loc.get("how_it_works_text_1", "1. *Uzmanlık Alanı Seçin:* Simülasyonun zorluk seviyesini ve konusunu belirlemek için bir uzmanlık alanı seçin."))
-    st.markdown(loc.get("how_it_works_text_2", "2. *Soru Sorun:* Hastaya semptomları, tıbbi geçmişi ve yaşam tarzı hakkında sorular sorun."))
-    st.markdown(loc.get("how_it_works_text_3", "3. *Tanı Koyun:* Yeterli bilgi topladığınızı düşündüğünüzde, teşhisinizi \"Tanım: [Hastalık Adı]\" şeklinde girin."))
-    st.markdown(loc.get("how_it_works_text_4", "4. *Geribildirim Alın:* Simülatör, tanınızın doğru olup olmadığını size söyleyecektir."))
+    st.markdown(loc.get("how_it_works_text_1",
+                        "1. *Uzmanlık Alanı Seçin:* Simülasyonun zorluk seviyesini ve konusunu belirlemek için bir uzmanlık alanı seçin."))
+    st.markdown(loc.get("how_it_works_text_2",
+                        "2. *Soru Sorun:* Hastaya semptomları, tıbbi geçmişi ve yaşam tarzı hakkında sorular sorun."))
+    st.markdown(loc.get("how_it_works_text_3",
+                        "3. *Tanı Koyun:* Yeterli bilgi topladığınızı düşündüğünüzde, teşhisinizi \"Tanım: [Hastalık Adı]\" şeklinde girin."))
+    st.markdown(loc.get("how_it_works_text_4",
+                        "4. *Geribildirim Alın:* Simülatör, tanınızın doğru olup olmadığını size söyleyecektir."))
 
     st.markdown("---")
-    st.warning(loc.get("disclaimer_text", "Bu simülatör yalnızca eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez."))
+    st.warning(loc.get("disclaimer_text",
+                       "Bu simülatör yalnızca eğitim amaçlıdır ve profesyonel tıbbi tavsiye yerine geçmez."))
 
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown(loc.get("ready_to_start_header", "### Başlamaya Hazır mısınız?"))
     if st.button(loc.get("start_simulation_button_label_large", "🚀 Simülasyonu Başlat"), key="home_start_sim_btn"):
         st.session_state.page = "simulation"
-        st.session_state.is_new_simulation = True # Simülasyon başlarken prompt'u tetikle
+        st.session_state.is_new_simulation = True  # Simülasyon başlarken prompt'u tetikle
         st.rerun()
+
 
 # --- Simülasyon Sayfası (CHAT PAGE) Fonksiyonu ---
 def simulation_page():
-    render_sidebar_common_sections() # Ortak sidebar öğelerini render et
+    render_sidebar_common_sections()  # Ortak sidebar öğelerini render et
 
     st.sidebar.markdown("---")
     st.sidebar.header(loc.get('sidebar_branch_selection_title', "Uzmanlık Alanı Seçimi"))
-    
+
     branch_keys = [
         "branch_general", "branch_internal_medicine", "branch_cardiology",
         "branch_neurology", "branch_urology", "branch_obgyn",
@@ -276,16 +428,16 @@ def simulation_page():
         st.session_state.page = "home"
         st.rerun()
     if st.sidebar.button(loc.get('start_simulation_button_label', "💬 Yeni Simülasyon"), key="sidebar_sim_btn"):
-        st.session_state.clear() # Tüm session state'i temizle
+        st.session_state.clear()  # Tüm session state'i temizle
         st.session_state.page = "simulation"
-        st.session_state.is_new_simulation = True # Yeni simülasyonu tetiklemek için flag
+        st.session_state.is_new_simulation = True  # Yeni simülasyonu tetiklemek için flag
         st.rerun()
 
     # Eğer branş değiştiyse veya yeni simülasyon başlatıldıysa prompt'u sıfırla
     if st.session_state.get("last_branch") != selected_branch_display_name_new or st.session_state.is_new_simulation:
         st.session_state.last_branch = selected_branch_display_name_new
-        st.session_state.is_new_simulation = False # Sıfırlama sonrası flag'i resetle
-        
+        st.session_state.is_new_simulation = False  # Sıfırlama sonrası flag'i resetle
+
         ai_lang_code_for_prompt = ""
         if st.session_state.current_language == "tr":
             ai_lang_code_for_prompt = "Türkçe"
@@ -293,7 +445,7 @@ def simulation_page():
             ai_lang_code_for_prompt = "English"
         elif st.session_state.current_language == "ar":
             ai_lang_code_for_prompt = "العربية"
-            
+
         simulation_rules = (
             f"Simülasyon gereği, kan tahlili, röntgen, MR veya diğer fiziksel muayene sonuçları elimizde yok. "
             f"Sadece bana verdiğin bilgilere ve benim sana sözlü olarak sunduğum şikayetlere odaklan. "
@@ -303,16 +455,26 @@ def simulation_page():
         )
 
         base_prompt_part1 = loc.get("base_prompt_part1", "Sen AI destekli bir hasta simülasyonusun.")
-        base_prompt_part2 = loc.get("base_prompt_part2", "Doktorun dili {AI_LANG}. Tüm cevaplarını **{AI_LANG}** olarak ver.").format(AI_LANG=ai_lang_code_for_prompt)
+        base_prompt_part2 = loc.get("base_prompt_part2",
+                                    "Doktorun dili {AI_LANG}. Tüm cevaplarını **{AI_LANG}** olarak ver.").format(
+            AI_LANG=ai_lang_code_for_prompt)
         base_prompt_part4 = loc.get("base_prompt_part4", "Cevapların kısa ve sade olsun.")
-        base_prompt_part5 = loc.get("base_prompt_part5", "Doktor 'Tanım:' veya 'tanım:' ile başlayan bir mesaj gönderirse, bu bir teşhis denemesidir. Bu mesaja **KESİNLİKLE DOĞRUDAN YANIT VERME.** Senin yanıtın, sistem tarafından işlenecek özel bir prompt'a yanıt olarak verilecek ve sistem mesajı olarak gösterilecektir.")
-        base_prompt_part6 = loc.get("base_prompt_part6", "Doktor \"Merhaba, şikayetiniz nedir?\" gibi bir soruyla sana başladığında, kendi seçtiğin birincil semptomunu ve şikayetini **{AI_LANG}** olarak açıklayarak sohbeti başlat.").format(AI_LANG=ai_lang_code_for_prompt)
-        base_prompt_part7 = loc.get("base_prompt_part7", "Doktor senden tıbbi bir bulgu (röntgen, kan sonuçları, mr, cilt fotoğrafı vb.) isterse, kısaca 'Evet, elimde mevcut.' gibi bir ifadeyle **{AI_LANG}** olarak onay ver ve ek bilgi isteme.").format(AI_LANG=ai_lang_code_for_prompt)
+        base_prompt_part5 = loc.get("base_prompt_part5",
+                                    "Doktor 'Tanım:' veya 'tanım:' ile başlayan bir mesaj gönderirse, bu bir teşhis denemesidir. Bu mesaja **KESİNLİKLE DOĞRUDAN YANIT VERME.** Senin yanıtın, sistem tarafından işlenecek özel bir prompt'a yanıt olarak verilecek ve sistem mesajı olarak gösterilecektir.")
+        base_prompt_part6 = loc.get("base_prompt_part6",
+                                    "Doktor \"Merhaba, şikayetiniz nedir?\" gibi bir soruyla sana başladığında, kendi seçtiğin birincil semptomunu ve şikayetini **{AI_LANG}** olarak açıklayarak sohbeti başlat.").format(
+            AI_LANG=ai_lang_code_for_prompt)
+        base_prompt_part7 = loc.get("base_prompt_part7",
+                                    "Doktor senden tıbbi bir bulgu (röntgen, kan sonuçları, mr, cilt fotoğrafı vb.) isterse, kısaca 'Evet, elimde mevcut.' gibi bir ifadeyle **{AI_LANG}** olarak onay ver ve ek bilgi isteme.").format(
+            AI_LANG=ai_lang_code_for_prompt)
 
         if selected_branch_display_name_new == loc.get("branch_general", "Genel Hekimlik"):
-            base_prompt_part3 = loc.get("base_prompt_part3_general", "Sen herhangi bir branşa ait olabilecek bir hastasın. Kafanda bir hastalık belirle. Bu hastalığı ve semptomlarını doğrudan söyleme. Doktorun sorularına göre cevap ver.")
+            base_prompt_part3 = loc.get("base_prompt_part3_general",
+                                        "Sen herhangi bir branşa ait olabilecek bir hastasın. Kafanda bir hastalık belirle. Bu hastalığı ve semptomlarını doğrudan söyleme. Doktorun sorularına göre cevap ver.")
         else:
-            base_prompt_part3 = loc.get("base_prompt_part3_branch", "Sen {branch_name} branşında bir hastasın. Kafanda bu branşa ait bir hastalık belirle. Bu hastalığı ve semptomlarını doğrudan söyleme. Doktorun sorularına göre cevap ver.").format(branch_name=selected_branch_display_name_new)
+            base_prompt_part3 = loc.get("base_prompt_part3_branch",
+                                        "Sen {branch_name} branşında bir hastasın. Kafanda bu branşa ait bir hastalık belirle. Bu hastalığı ve semptomlarını doğrudan söyleme. Doktorun sorularına göre cevap ver.").format(
+                branch_name=selected_branch_display_name_new)
 
         st.session_state.base_prompt = "\n".join([
             base_prompt_part1,
@@ -322,31 +484,35 @@ def simulation_page():
             base_prompt_part5,
             base_prompt_part6,
             base_prompt_part7,
-            simulation_rules # Sabit kuralları da prompt'a ekle
+            simulation_rules  # Sabit kuralları da prompt'a ekle
         ])
-        
+
         st.session_state.conversation = [{"role": "user", "parts": [st.session_state.base_prompt]}]
         st.session_state.tahmin_hakki = 2
         st.session_state.system_message = ""
         st.session_state.logs = []
         st.session_state.input_text = ""
-        st.session_state.selected_branch_display_name = selected_branch_display_name_new # Branşı güncelle
+        st.session_state.selected_branch_display_name = selected_branch_display_name_new  # Branşı güncelle
         st.rerun()
 
-
     st.markdown(f"## {loc.get('app_title', 'AI Doktor Simülatörü')}")
-    st.info(f"{loc.get('patient_info', '🧑‍🔬 AI Hasta: Yapay zeka destekli sanal bir hasta sizi bekliyor.')}\n{loc.get('task_info', '🎯 Görev: Sorular sorarak doğru tanıya ulaşın.')}\n{loc.get('hint_info', '💡 Not: Hasta doğrudan hastalığını söylemez, siz ipuçlarından tanıyı tahmin etmelisiniz.')}")
-    st.warning(f"{loc.get('tips_title', '📌 İpuçları:')}\n{loc.get('tip_diagnosis_format', '- Tanı için Tanım: X şeklinde yazın.')}\n{loc.get('tip_guess_limit', '- Sadece *2 tahmin hakkınız* vardır. İyi düşünün!')}")
+    st.info(
+        f"{loc.get('patient_info', '🧑‍🔬 AI Hasta: Yapay zeka destekli sanal bir hasta sizi bekliyor.')}\n{loc.get('task_info', '🎯 Görev: Sorular sorarak doğru tanıya ulaşın.')}\n{loc.get('hint_info', '💡 Not: Hasta doğrudan hastalığını söylemez, siz ipuçlarından tanıyı tahmin etmelisiniz.')}")
+    st.warning(
+        f"{loc.get('tips_title', '📌 İpuçları:')}\n{loc.get('tip_diagnosis_format', '- Tanı için Tanım: X şeklinde yazın.')}\n{loc.get('tip_guess_limit', '- Sadece *2 tahmin hakkınız* vardır. İyi düşünün!')}")
 
     st.markdown("---")
 
-    def handle_send_message():
+    # handle_send_message fonksiyonu input_to_process_arg'ı doğrudan alacak şekilde güncellendi
+    def handle_send_message(input_to_process_arg):
         """Sohbet gönderme işlemini yürüten yardımcı fonksiyon (Groq için güncellendi)"""
-        if st.session_state.input_text.strip():
-            input_to_process = st.session_state.input_text
-            st.session_state.input_text = ""
+        input_to_process = input_to_process_arg
 
-            # Groq'un beklediği {"role": ..., "content": ...} formatına dönüştür.
+        if input_to_process.strip():
+            # st.form kullandığımız için bu satırlar artık gerekli değil, form otomatik temizler
+            # st.session_state.input_text = ""
+            # st.session_state.chat_input_key = ""
+
             def convert_history_for_api(conversation_history):
                 messages = []
                 for msg in conversation_history:
@@ -368,18 +534,18 @@ def simulation_page():
             # --- TEŞHİS GİRİŞİMİ MANTIĞI (GROQ İÇİN GÜNCELLENDİ) ---
             if is_diagnosis_attempt:
                 st.session_state.conversation.append(
-                    {"role": "user", "parts": [f"**{loc.get('doctor_label', 'Doktor')}:** {input_to_process}"]})
+                    {"role": "user", "parts": [input_to_process]})  # Etiket yok
 
                 with st.spinner(loc.get('processing_diagnosis', "Tanı değerlendiriliyor...")):
                     if st.session_state.tahmin_hakki > 0:
                         st.session_state.tahmin_hakki -= 1
 
                         ai_lang_code_for_prompt = st.session_state.current_language
+                        # Kalan hakka göre doğru prompt anahtarını seç
                         prompt_key = "diagnosis_prompt_final" if st.session_state.tahmin_hakki == 0 else "diagnosis_prompt_initial"
                         diagnosis_prompt_text = loc.get(prompt_key, "").format(guess=tahmin,
                                                                                AI_LANG=ai_lang_code_for_prompt)
 
-                        # Mevcut sohbeti ve özel teşhis sorusunu API'ye gönder
                         messages_for_api = convert_history_for_api(st.session_state.conversation)
                         messages_for_api.append({"role": "user", "content": diagnosis_prompt_text})
 
@@ -389,34 +555,22 @@ def simulation_page():
                                 model="llama3-8b-8192"
                             )
                             diagnosis_response_raw = chat_completion.choices[0].message.content
-
-                            # ... (Loglama ve mesaj gösterme mantığı aynı kalıyor) ...
-                            correct_diagnosis_phrase_lower = loc.get("diagnosis_prompt_correct",
-                                                                     "Doğru Teşhis!").lower()
-                            is_correct_diagnosis = diagnosis_response_raw.lower().startswith(
-                                correct_diagnosis_phrase_lower)
-
-                            if "logs" not in st.session_state: st.session_state.logs = []
-                            st.session_state.logs.append({
-                                "timestamp": str(datetime.datetime.now()), "guess": tahmin,
-                                "actual_ai_response": diagnosis_response_raw,
-                                "result": "Doğru Teşhis" if is_correct_diagnosis else "Yanlış Teşhis",
-                                "branch": st.session_state.selected_branch_display_name,
-                                "language": st.session_state.current_language
-                            })
+                            correct_diagnosis_phrase_lower = loc.get("diagnosis_prompt_correct", "Doğru Teşhis! Gizli hastalığını bildin.").lower()
+                            is_correct_diagnosis = diagnosis_response_raw.lower().startswith(correct_diagnosis_phrase_lower)
 
                             if is_correct_diagnosis:
                                 st.session_state.system_message = f"*{loc.get('diagnosis_correct_congrats', 'Tebrikler! Doğru Teşhis!')}*\n\n{diagnosis_response_raw}"
-                                st.session_state.tahmin_hakki = 0
-                            else:
-                                if st.session_state.tahmin_hakki == 0:
+                                st.session_state.tahmin_hakki = 0  # Doğru tahmin sonrası tahmin hakkı sıfırlanır
+                            else:  # Teşhis yanlışsa
+                                if st.session_state.tahmin_hakki == 0:  # Son tahmin hakkıydı ve yanlış oldu
+                                    # Kalan tahmin hakkı 0 ise, AI'nın verdiği doğru hastalığı açıklayan cevabı göster
                                     st.session_state.system_message = f"*{loc.get('diagnosis_wrong_no_attempts', 'Yanlış teşhis. Tahmin hakkınız kalmadı.')}*\n\n{diagnosis_response_raw}"
-                                else:
-                                    st.session_state.system_message = f"*{loc.get('diagnosis_wrong_remaining', 'Yanlış teşhis. Kalan tahmin hakkınız:')} {st.session_state.tahmin_hakki}*\n\n{diagnosis_response_raw}"
-
+                                else:  # İlk tahmin ve yanlış oldu, sadece "Yanlış teşhis. Kalan tahmin hakkınız: 1" mesajını göster.
+                                    st.session_state.system_message = f"*{loc.get('diagnosis_wrong_remaining', 'Yanlış teşhis. Kalan tahmin hakkınız:')} {st.session_state.tahmin_hakki}*"
+                                    # AI'nın o andaki cevabını (diagnosis_response_raw) bu durumda sisteme göstermiyoruz.
                         except Exception as e:
                             st.error(f"Groq API ile tanı değerlendirilirken hata oluştu: {e}")
-                            st.session_state.system_message = "Sistem Mesajı: Tanı değerlendirmesi sırasında bir hata oluştu."
+                            st.session_state.system_message = loc.get('system_message_diagnosis_error', "Sistem Mesajı: Tanı değerlendirmesi sırasında bir hata oluştu.")
                         st.rerun()
                     else:
                         st.session_state.system_message = loc.get('no_more_guesses', "Tahmin hakkınız kalmadı.")
@@ -425,7 +579,7 @@ def simulation_page():
             # --- NORMAL SOHBET MANTIĞI (GROQ İÇİN GÜNCELLENDİ) ---
             else:
                 st.session_state.conversation.append(
-                    {"role": "user", "parts": [f"**{loc.get('doctor_label', 'Doktor')}:** {input_to_process}"]})
+                    {"role": "user", "parts": [input_to_process]})  # Etiket yok
 
                 with st.spinner(loc.get('waiting_for_patient_response', "Hastanın yanıtı bekleniyor...")):
                     messages_for_api = convert_history_for_api(st.session_state.conversation)
@@ -436,7 +590,7 @@ def simulation_page():
                         )
                         reply = chat_completion.choices[0].message.content
                         st.session_state.conversation.append(
-                            {"role": "model", "parts": [f"**{loc.get('patient_label', 'Hasta')}:** {reply}"]})
+                            {"role": "model", "parts": [reply]})  # Etiket yok
                     except Exception as e:
                         st.error(f"Groq API'den yanıt alınırken bir hata oluştu: {e}")
                 st.rerun()
@@ -455,28 +609,37 @@ def simulation_page():
     if "system_message" in st.session_state and st.session_state.system_message:
         st.info(f"*{loc.get('system_message_prefix', 'Sistem Mesajı:')}*\n\n{st.session_state.system_message}")
 
-    col_mic, col_input, col_send = st.columns([1, 6, 2])
-    
+    # --- Sohbet Giriş ve Gönderim Alanı (st.form ile güncellendi) ---
+    col_mic, col_form = st.columns([1, 8]) # Kolonları düzenledim
+
     with col_mic:
         st.markdown("<br>", unsafe_allow_html=True)
+        # Sesli komut butonu form dışında kalmalı, çünkü bir input ayarlar ama doğrudan göndermez
         if st.button("🎤", help=loc.get('mic_button_help', "Sesli komut ile konuş"), key="mic_btn"):
             st.session_state.input_text = sesli_komut_al()
-            st.rerun()
+            st.rerun() # Sesli input alındığında arayüzü güncelle
 
-    with col_input:
-        user_input = st.text_input(
-            loc.get('user_input_placeholder', "Lütfen buraya yazın..."),
-            value=st.session_state.input_text,
-            key="chat_input",
-            label_visibility="collapsed",
-            on_change=lambda: setattr(st.session_state, 'input_text', st.session_state.chat_input)
-        )
-    
-    with col_send:
-        st.markdown("<br>", unsafe_allow_html=True)
-        if st.button(loc.get('send_button', "🚀 Gönder"), key="send_message_button"):
-            handle_send_message()
+    with col_form:
+        with st.form(key="chat_form", clear_on_submit=True):
+            text_input_col, send_button_col = st.columns([6, 2])
 
+            with text_input_col:
+                user_input = st.text_input(
+                    loc.get('user_input_placeholder', "Lütfen buraya yazın..."),
+                    value=st.session_state.input_text,
+                    key="chat_input_key",
+                    label_visibility="collapsed",
+                )
+
+            with send_button_col:
+                st.markdown("<br>", unsafe_allow_html=True)  # Butonu hizalamak için
+                # st.form_submit_button'dan 'key' argümanı kaldırıldı
+                submitted = st.form_submit_button(loc.get('send_button', "🚀 Gönder"))
+
+            # Form gönderildiğinde (Enter'a basıldığında veya butona tıklandığında)
+            if submitted:
+                # handle_send_message'ı doğrudan form input değeriyle çağır
+                handle_send_message(user_input)  # user_input zaten st.session_state.chat_input_key'deki değeri taşıyor
 
     st.markdown("---")
     col_buttons = st.columns(3)
@@ -533,4 +696,6 @@ elif st.session_state.page == "simulation":
 
 # --- FOOTER (Alt Bilgi) ---
 st.markdown("---")
-st.markdown(f"<p style='text-align: center; color: #6c757d; font-size: 0.85rem;'>{loc.get('footer_text', 'AI Doktor Simülatörü - Eğitim Amaçlı Bir Uygulamadır')}</p>", unsafe_allow_html=True)
+st.markdown(
+    f"<p style='text-align: center; color: #6c757d; font-size: 0.85rem;'>{loc.get('footer_text', 'AI Doktor Simülatörü - Eğitim Amaçlı Bir Uygulamadır')}</p>",
+    unsafe_allow_html=True)

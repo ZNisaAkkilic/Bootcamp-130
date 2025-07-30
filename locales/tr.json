@@ -44,7 +44,7 @@
   "tip_guess_limit": "- Sadece *2 tahmin hakkınız* vardır. İyi düşünün!",
   "system_message_prefix": "Sistem Mesajı:",
   "processing_diagnosis": "Tanı değerlendiriliyor...",
-  "diagnosis_correct_congrats": "Tebrikler! Doğru Teşhis!",
+  "diagnosis_correct_congrats": "Tebrikler!",
   "diagnosis_wrong_remaining": "Yanlış teşhis. Kalan tahmin hakkınız:",
   "diagnosis_wrong_no_attempts": "Yanlış teşhis. Tahmin hakkınız kalmadı.",
   "system_message_diagnosis_error": "Sistem Mesajı: Tanı değerlendirmesi sırasında bir hata oluştu.",
@@ -78,9 +78,7 @@
   "base_prompt_part5": "Doktor 'Tanım:' veya 'tanım:' ile başlayan bir mesaj gönderirse, bu bir teşhis denemesidir. Bu mesaja **KESİNLİKLE DOĞRUDAN YANIT VERME.** Senin yanıtın, sistem tarafından işlenecek özel bir prompt'a yanıt olarak verilecek ve sistem mesajı olarak gösterilecektir.",
   "base_prompt_part6": "Doktor \"Merhaba, şikayetiniz nedir?\" gibi bir soruyla sana başladığında, kendi seçtiğin birincil semptomunu ve şikayetini **{AI_LANG}** olarak açıklayarak sohbeti başlat.",
   "base_prompt_part7": "Doktor senden tıbbi bir bulgu (röntgen, kan sonuçları, mr, cilt fotoğrafı vb.) isterse, kısaca 'Evet, elimde mevcut.' gibi bir ifadeyle **{AI_LANG}** olarak onay ver ve ek bilgi isteme.",
-  "diagnosis_prompt_correct": "Doğru Teşhis! Gizli hastalığını bildin.",
-  "diagnosis_prompt_wrong_hint": "Yanlış Teşhis! Kalan hakkın: {attempts}. Sistem Değerlendirmesi: ",
-  "diagnosis_prompt_wrong_final": "Yanlış Teşhis! Tahmin hakkın kalmadı. Doğru Cevap: ",
-  "diagnosis_prompt_initial": "Doktor şimdi sana '{guess}' teşhisi koydu. Eğer bu koyduğu teşhis senin gizli hastalığın ise, lütfen 'Doğru Teşhis!' diyerek başla ve gizli hastalığının adını ve ana semptomlarını {AI_LANG} olarak belirt. Eğer yanlış teşhis ise, sadece 'Yanlış Teşhis!' de ve doktorun eksik sorularını belirten tıbbi bir ipucu ver. İpucunu çok açık verme ve {AI_LANG} olarak yanıtla.",
-  "diagnosis_prompt_final": "Doktor şimdi sana '{guess}' teşhisi koydu. Eğer bu koyduğu teşhis senin gizli hastalığın ise, lütfen 'Doğru Teşhis!' diyerek başla ve gizli hastalığının adını ve ana semptomlarını {AI_LANG} olarak belirt. Eğer yanlış teşhis ise, doğrudan doğru hastalığın adını ve ana semptomlarını {AI_LANG} olarak açıklayarak doktoru bilgilendir."
+  "diagnosis_prompt_correct": "Gizli hastalığını bildin.",
+  "diagnosis_prompt_initial": "Doktor şimdi sana '{guess}' teşhisi koydu. Bu teşhis doğru değilse, sadece kısa ve genel bir 'Yanlış Teşhis.' yanıtı ver ve başka hiçbir bilgi, ipucu veya rol devamı ekleme. Yanıtını {AI_LANG} olarak ver.",
+"diagnosis_prompt_final": "Doktor şimdi sana '{guess}' teşhisi koydu. Eğer bu teşhis senin (AI'nın) gizli hastalığın ise, lütfen yanıtına 'Doğru Teşhis! Gizli hastalığını bildin.' diyerek başla ve gizli hastalığının adını ve ana semptomlarını {AI_LANG} olarak belirt. **Eğer doktorun teşhisi yanlış ise ve tahmin hakkı kalmadıysa, artık bir hasta gibi davranmayı tamamen bırak ve asla 'Doğru Teşhis!', 'Gizli hastalığını bildin.' veya benzeri bir ifade KULLANMA.** Senin yanıtın sadece ve kesinlikle şu formatta olmalıdır: **'Doğru cevap: [Gizli Hastalığın Adı] - [Gizli Hastalığın Ana semptomları]'**. Bu format dışında hiçbir ek cümle, ek bilgi, diyalog, rol devamı veya kendi performansına atıfta bulunan bir ifade olmamalıdır. Yanıtını {AI_LANG} olarak ver."
 }
