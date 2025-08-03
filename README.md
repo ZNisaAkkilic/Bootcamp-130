@@ -38,7 +38,7 @@ CaseZero, tıp öğrencilerinin klinik teşhis ve hasta yönetimi becerilerini g
 
 **Kullanıcı Dostu Arayüz**: Basit, sezgisel ve hızlı erişilebilir arayüz tasarımı. Hem masaüstü hem mobil cihazlar ile uyumlu. Hem website hem de uygulama olarak kullanılabilmektedir.
 
-**Çoklu Dil Desteği ** : Türkçe, İngilizce, Arapça dil desteği sunar.
+**Çoklu Dil Desteği** : Türkçe, İngilizce, Arapça dil desteği sunar.
 
 ## 🎯 Hedef Kitle
 
