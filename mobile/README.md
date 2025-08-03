@@ -1,0 +1,1 @@
+# Mobil uygulama buraya gelecek
