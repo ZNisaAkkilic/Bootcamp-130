@@ -6,7 +6,7 @@
 
     <!-- Eğer HTTP bağlantı yapılıyorsa bunu da ekle -->
     <application
-        android:label="yakup"
+        android:label="CaseZero"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true">  <!-- Bu satır HTTP için önemli -->
