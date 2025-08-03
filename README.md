@@ -556,7 +556,7 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 
 
 <details open>
-  <summary><h1>2️⃣Sprint-3</h1></summary>
+  <summary><h1>3️⃣Sprint-3</h1></summary>
 
 ## 📝 Sprint Notları
 
@@ -785,6 +785,7 @@ dillerinde çalışmaktadır.
 - Ekip üyeleri projenin  ilerleyişini yakından takip etti, olumlu karşıladı ve sürece aktif şekilde dahil oldu. Proje, takım tarafından sahiplenildi ve ilerleyişi izlenip onaylandı. 
 
 **Geri Bildirimler ve Sonraki Adımlar:**  
+
 _Proje hedeflenen sprint içinde hedeflerine ulaşmış ve tamamlanmıştır ancak ürün geliştirme 
 ve akademi sonrası için de çalışmalar yapılması ihtimaline karşın bu “Geri Bildirim ve 
 Sonraki Adımlar” bloğu yazılmıştır._
@@ -819,6 +820,7 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 -Kullanılan AI desteği son zamanlarda değiştiği için AI modül için çalışmalarda zaman zaman zorluklar yaşandı, ilk Sprint için bu araştırmalar yapılabilirdi. 
 
 **➡️3. Gelecek İçin Neyi Değiştireceğiz?**
+
 _Proje hedeflenen sprint içinde hedeflerine ulaşmış ve tamamlanmıştır ancak ürün geliştirme 
 ve akademi sonrası için de çalışmalar yapılması ihtimaline karşın bu “Gelecek için neyi 
 değiştireceğiz?” bloğu yazılmıştır._
