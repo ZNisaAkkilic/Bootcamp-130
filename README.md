@@ -14,8 +14,15 @@ Bootcamp AI-130
 ## 0️⃣ Ürün İsmi
 CaseZero
 
-## 🟥 Ürün Linki
+## 🖇️ Ürün Linkleri
+### 🌐 Website
 [CaseZero](https://bootcamp-130-3otqvbxtxslqcmdvbeihd7.streamlit.app/)
+
+### 📱 APK Dosyası
+Mobil uygulamanın son sürümünü aşağıdaki bağlantıdan indirebilirsiniz:
+
+👉 [Uygulama (APK)](https://github.com/printfrnur/Bootcamp-130/blob/main/Mobile/builds/app-release.apk?raw=true)
+
 
 ## ☘️ Ürün Açıklaması
 CaseZero, tıp öğrencilerinin klinik teşhis ve hasta yönetimi becerilerini geliştirmeleri için tasarlanmış yenilikçi bir yapay zeka destekli hasta simülasyon platformudur. Yapay Zeka desteği ile vakalara dayanan dinamik ve etkileşimli hasta profilleriyle, öğrenciler sanal bir ortamda hastaların semptomlarını sorgulayabilir, teşhis koyma pratiği yapabilir ve klinik karar verme yeteneklerini güçlendirebilir.CaseZero, yapay zekâ teknlojisi sayesinde gerçek bir hasta ile konuşuyormuş hissi yaratır; böylece öğrenciler, teorik bilgilerini pratiğe dönüştürerek daha etkili ve güvenli bir öğrenme deneyimi yaşarlar.
