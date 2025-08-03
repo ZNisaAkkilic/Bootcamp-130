@@ -752,6 +752,10 @@ Kardiyoloji branşında bir vaka örneği şekildeki gibidir.
 ![Vaka-2](https://github.com/user-attachments/assets/5f01a101-4f44-4d9c-8fad-a8aad07266f6)
 
 
+### Koyu Tema
+
+![koyu tema](https://github.com/user-attachments/assets/6bba2e3f-4b90-4882-ae9d-94c53fe0a49e)
+
 
 ### İngilizce Dil Desteği
 
