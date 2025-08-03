@@ -15,13 +15,15 @@ Bootcamp AI-130
 CaseZero
 
 ## 🖇️ Ürün Linkleri
-### 🌐 Website
-[CaseZero](https://bootcamp-130-3otqvbxtxslqcmdvbeihd7.streamlit.app/)
+###  Website
+Platforma bu bağlantıdan ulaşabilirsiniz:
 
-### 📱 APK Dosyası
+🌐[CaseZero](https://bootcamp-130-3otqvbxtxslqcmdvbeihd7.streamlit.app/)
+
+###  APK Dosyası
 Mobil uygulamanın son sürümünü aşağıdaki bağlantıdan indirebilirsiniz:
 
-👉 [Uygulama (APK)](https://github.com/printfrnur/Bootcamp-130/blob/main/Mobile/builds/app-release.apk?raw=true)
+📱[Uygulama (APK)](https://github.com/printfrnur/Bootcamp-130/blob/main/Mobile/builds/app-release.apk?raw=true)
 
 
 ## ☘️ Ürün Açıklaması
