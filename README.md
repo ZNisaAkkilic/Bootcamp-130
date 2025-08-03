@@ -52,7 +52,8 @@ CaseZero, tıp öğrencilerinin klinik teşhis ve hasta yönetimi becerilerini g
 
 Aşağıda, projeye ait önceliklendirilmiş işler listesinin (Product Backlog) güncel hali yer almaktadır. Backlog, sprint planlamalarında referans olarak kullanılmakta ve gereksinimlerin önceliklendirilmesini sağlamaktadır. Product Backlog kullanıcı hikayesi ve kabul kriterleri baz alınarak oluşturulmuştur.
 
-![product backlog.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/product%20backlog.jpg)
+![product backlog](https://github.com/user-attachments/assets/2cb74cdb-ebdb-4d79-b90d-afa9ab75c6b6)
+
 
 
 ## 👥 RACI Matrisi
@@ -580,7 +581,7 @@ Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekle
 <details>
 <summary>📂 21.07.2025</summary>
 
-![21.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/21.07.jpg)
+![21 07](https://github.com/user-attachments/assets/e08757b6-85fe-49fe-9d64-36716b37cd69)
 
 
 </details>
@@ -588,7 +589,8 @@ Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekle
 <details>
 <summary>📂 22.07.2025</summary>
 
-![22.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/22.07.jpg)
+![22 07](https://github.com/user-attachments/assets/67ec36f3-bd4a-4942-bcfa-35bdba93c144)
+
 
 
 </details>
@@ -596,7 +598,8 @@ Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekle
 <details>
 <summary>📂 23.07.2025</summary>
 
-![23.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/23.07.jpg)
+![23 07](https://github.com/user-attachments/assets/51c219c2-bf92-4eea-a27d-00cdb98e8081)
+
 
 
 </details>
@@ -604,7 +607,8 @@ Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekle
 <details>
 <summary>📂 24.07.2025</summary>
 
-![24.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/24.07.jpg)
+![24 07](https://github.com/user-attachments/assets/5bec03f6-68ae-4ec1-b6d8-ebd10cd24b7a)
+
 
 
 </details>
@@ -612,7 +616,8 @@ Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekle
 <details>
 <summary>📂 25.07.2025</summary>
   
-![25.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/25.07.jpg)
+![25 07](https://github.com/user-attachments/assets/f12d4a20-786e-4654-a56a-91b163c18a77)
+
 
 
 </details>
@@ -620,7 +625,8 @@ Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekle
 <details>
 <summary>📂 26.07.2025</summary>
   
-![26.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/26.07.jpg)
+![26 07](https://github.com/user-attachments/assets/9629d299-dcf1-4fed-8fcd-2b690f272b5f)
+
 
 
 </details>
@@ -628,7 +634,8 @@ Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekle
 <details>
 <summary>📂 27.07.2025</summary>
 
-![27.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/27.07.jpg)
+![27 07](https://github.com/user-attachments/assets/f65921a5-3a89-4f6c-9199-c7f33278495b)
+
 
 
 </details>
@@ -636,7 +643,8 @@ Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekle
 <details>
 <summary>📂 28.07.2025</summary>
 
-![28.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/28.07.jpg)
+![28 07](https://github.com/user-attachments/assets/11007bb3-66e7-495a-b5e8-5e0f895a48d6)
+
 
 
 </details>
@@ -644,15 +652,8 @@ Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekle
 <details>
 <summary>📂 29.07.2025</summary>
 
-![29.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/29.07.jpg)
+![29 07](https://github.com/user-attachments/assets/754d5682-436b-45c4-a364-8a7317841185)
 
-
-</details>
-
-<details>
-<summary>📂 31.07.2025</summary>
-
-![30.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/30.07.jpg)
 
 
 </details>
@@ -660,15 +661,26 @@ Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekle
 <details>
 <summary>📂 31.07.2025</summary>
 
-![31.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/31.07.jpg)
+![30 07](https://github.com/user-attachments/assets/20b3793b-6e70-4674-8332-2f5e2719cc54)
+
+
+
+</details>
+
+<details>
+<summary>📂 31.07.2025</summary>
+
+![31 07](https://github.com/user-attachments/assets/e46acf5d-9839-408a-a16a-4d71fcba0a10)
+
 
 
 </details>
 
 <details>
 <summary>📂 01.08.2025</summary>
+  
+![01 08](https://github.com/user-attachments/assets/d6c4e5f4-38a4-4f30-99c6-aae1b5bf743a)
 
-![01.08.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/01.08.jpg)
 
 
 </details>
@@ -676,7 +688,8 @@ Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekle
 <details>
 <summary>📂 02.08.2025</summary>
 
-![02.08.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/02.08.jpg)
+![02 08](https://github.com/user-attachments/assets/150660c8-415e-4554-b3fc-15f26d04a546)
+
 
 
 </details>
@@ -690,10 +703,12 @@ Sprint Board, bu Sprint için Monday üzerinden yönetilmiştir. Aşağıda ilgi
 ### 📸 Kanban Görüntüleri
 
 #### 📌 Monday - Kanban Görüntüsü 1  
-![Monday-1.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/Monday-1.jpg)
+
+![Monday-1](https://github.com/user-attachments/assets/2d0c677e-348b-4142-b882-2af2446f811e)
 
 #### 📌 Monday - Kanban Görüntüsü 2  
-![Monday-2.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/Monday-2.jpg)
+
+![Monday-2](https://github.com/user-attachments/assets/44c7956b-23e1-426a-b126-5ca0ae043d76)
 
 
 
@@ -707,40 +722,43 @@ Sprint Board, bu Sprint için Monday üzerinden yönetilmiştir. Aşağıda ilgi
 
 Uygulamanın açılış ekranının son hali şekildeki gibidir.
 
+![Açılış Ekranı](https://github.com/user-attachments/assets/e7cb7b69-cf0d-4341-8663-cfdf85e8e5a3)
 
-![Açılış Ekranı.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/A%C3%A7%C4%B1l%C4%B1%C5%9F%20Ekran%C4%B1.jpg)
 
 
 ### Konuşma Ekranı
 
 Konuşma ekranının son hali şekildeki gibidir.
 
+![Konuşma Ekranı](https://github.com/user-attachments/assets/236d8fd7-a436-42f0-bf97-6e65e39f4b5b)
 
-![Konuşma Ekranı.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/Konu%C5%9Fma%20Ekran%C4%B1.jpg)
 
 
 ### Vaka-1
 
 Genel kategoride bir vaka örneği şekildeki gibidir.
 
-![Vaka-1.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/Vaka-1.jpg)
+![Vaka-1](https://github.com/user-attachments/assets/865c6dd2-94b8-4e8d-a1d8-38efc4c419ac)
+
 
 
 ### Vaka-2
 
 Kardiyoloji branşında bir vaka örneği şekildeki gibidir.
 
-![Vaka-2.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/Vaka-2.jpg)
+![Vaka-2](https://github.com/user-attachments/assets/5f01a101-4f44-4d9c-8fad-a8aad07266f6)
+
 
 
 ### İngilizce Dil Desteği
 
-![İngilizce.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/%C4%B0ngilizce.jpg)
+![İngilizce](https://github.com/user-attachments/assets/8ba3c7ae-ad3e-4fee-b724-72aaf48d63eb)
 
 
 ### Arapça Dil Desteği
 
-![Arapça.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/Arap%C3%A7a.jpg)
+![Arapça](https://github.com/user-attachments/assets/b8403848-aa79-44a7-b0db-f9821202a989)
+
 
 
 
