@@ -20,7 +20,7 @@ except Exception as e:
     st.error(f"Groq istemcisi başlatılırken hata oluştu: {e}. Lütfen GROQ_API_KEY'i kontrol edin.")
     st.stop()
 
-# Gemini istemcisini başlat (Yedek olarak hazırda tutuluyor)
+# Gemini istemcisini başlat (Proje hem Gemini hem de Groq ile yapılandırılabilir, iki farklı AI kullanılmasının sebebi Gemini üzerindeki sınırlı API Key kotasıdır.)
 try:
     genai.configure(api_key=st.secrets.get("GOOGLE_API_KEY"))
 except Exception as e:
