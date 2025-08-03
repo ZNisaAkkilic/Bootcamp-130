@@ -27,9 +27,9 @@ CaseZero, tıp öğrencilerinin klinik teşhis ve hasta yönetimi becerilerini g
 
 **Çeşitli Alan Senaryoları**: Kardiyoloji, solunum, nöroloji gibi farklı tıp alanlarından senaryolar oluşturulması mümkündür. Bu şekilde geniş bir yelpaze sunar.
 
-**Kullanıcı Dostu Arayüz**: Basit, sezgisel ve hızlı erişilebilir arayüz tasarımı. Hem masaüstü hem mobil cihazlarda (planlama aşaması) uyumlu.
+**Kullanıcı Dostu Arayüz**: Basit, sezgisel ve hızlı erişilebilir arayüz tasarımı. Hem masaüstü hem mobil cihazlar ile uyumlu. Hem website hem de uygulama olarak kullanılabilmektedir.
 
-**Çoklu Dil Desteği (Planlama Aşaması)** : İlk sürümde Türkçe destek sağlar.. Gelecekte diğer diller için genişletilebilir(planlama aşaması) altyapı.
+**Çoklu Dil Desteği ** : Türkçe, İngilizce, Arapça dil desteği sunar.
 
 ## 🎯 Hedef Kitle
 
@@ -56,10 +56,8 @@ CaseZero, tıp öğrencilerinin klinik teşhis ve hasta yönetimi becerilerini g
 Aşağıda, projeye ait önceliklendirilmiş işler listesinin (Product Backlog) güncel hali yer almaktadır. Backlog, sprint planlamalarında referans olarak kullanılmakta ve gereksinimlerin önceliklendirilmesini sağlamaktadır. Product Backlog kullanıcı hikayesi ve kabul kriterleri baz alınarak oluşturulmuştur.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2cb74cdb-ebdb-4d79-b90d-afa9ab75c6b6" alt="product backlog" width="700" style="max-width: 100%; height: auto;" />
+  <img src="https://github.com/user-attachments/assets/a45e3e5b-4ea5-4bdd-9d75-b16d0d205d1f" alt="product backlog" width="700" style="max-width: 100%; height: auto;" />
 </p>
-
-
 
 
 ## 👥 RACI Matrisi
@@ -571,6 +569,8 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 - Product Backlog üzerinde iyileştirmeler ve eklemeler yapılmıştır. Product Backlog son halini 
 almıştır.
 
+- Proje hem Website hem de uygulama şeklinde yapılmıştır.
+
 - Projenin son dokunuşları, düzeltmeleri e iyileştirmeleri yapılmıştır. Sprint hedeflerine ulaşmıştır. Sprint teknik yeterlilik ve proje yönetimi alanında tatmin edici şekilde sonlanmıştır. 
 
 - Ekip içi görev dağılımı ve iş takibi son sprintte de etkili bir şekilde sürdürülmüştür. Takım üyeleri proje sürecini sahiplendiklerini ve sorumluluk bilinciyle hareket ettiklerini ortaya koymuştur.
@@ -710,17 +710,18 @@ Sprint Board, bu Sprint için Monday üzerinden yönetilmiştir. Aşağıda ilgi
 
 #### 📌 Monday - Kanban Görüntüsü 1  
 
-![Monday-1](https://github.com/user-attachments/assets/2d0c677e-348b-4142-b882-2af2446f811e)
+![Monday-1](https://github.com/user-attachments/assets/fce17595-64bb-48a4-8e1c-04328762498d)
+
 
 #### 📌 Monday - Kanban Görüntüsü 2  
 
-![Monday-2](https://github.com/user-attachments/assets/44c7956b-23e1-426a-b126-5ca0ae043d76)
+![Monday-2](https://github.com/user-attachments/assets/13b51ba0-4391-48c9-985c-06da458e2524)
 
 
 
 ## 📸 Ürün Ekran Görüntüleri
 
-Ürünün geliştirme sürecine dair ekran görüntüleri aşağıda sunulmuştur. Platformun son halinin görüntüleri yer almaktadır. Açılış ekranı, birkaç sohbet örneği, koyu tema özellliği ve farklı dillerdeki ekran görüntüleri verilmiştir.
+Ürünün geliştirme sürecine dair ekran görüntüleri aşağıda sunulmuştur. Platformun son halinin görüntüleri yer almaktadır. Açılış ekranı, birkaç sohbet örneği, koyu tema özellliği, mobil uygulama şeklindeki görüntüsü ve farklı dillerdeki ekran görüntüleri verilmiştir.
 
 
 
@@ -770,7 +771,9 @@ Kardiyoloji branşında bir vaka örneği şekildeki gibidir.
 ![Arapça](https://github.com/user-attachments/assets/b8403848-aa79-44a7-b0db-f9821202a989)
 
 
+### Mobil Uygulama Görünümü
 
+![mobil](https://github.com/user-attachments/assets/dee7fcc7-4ec2-43e3-b568-87e01f3a0ef5)
 
 ## 👁️Sprint Review [02.08.2025]  
 
@@ -781,7 +784,9 @@ Bu sprintte, sistemin genel işleyişinin son haliyle tamamlanması, kullanıcı
 **Tamamlanan İşler:**  
 - Projeye farklı dil seçenekleri eklendi. Şu anda platform İngilizce,Arapça ve Türkçe 
 dillerinde çalışmaktadır. 
-- Gemini ile API Key ve kota sorunu yaşandığından başka bir Yapay Zeka modeli olan Groq ile de yapılandırma yapıldı. HemGroq hem Gemini ile kod çalıştırılabilmektedir. 
+- Gemini ile API Key ve kota sorunu yaşandığından başka bir Yapay Zeka modeli olan Groq ile de yapılandırma yapıldı. HemGroq hem Gemini ile kod çalıştırılabilmektedir.
+- Platformun mobil uygulaması da Flutter ile geliştirdi.
+- Mobil uygulama yapılandırması sağlandı.
 - Yapay zeka modülü entegrasyonu sağlandı. 
 - Yapay zeka modülü entegrasyonu ile ilgili problemler çözüldü ve modül geliştirildi.
 - Koyu tema özelliği eklendi. Renk ayarlamaları yapıldı. 
@@ -803,8 +808,8 @@ Sonraki Adımlar” bloğu yazılmıştır._
 - Proje, kullanıcı deneyimi açısından olumlu geri dönüşler almıştır. Kullanıcıların sistemle etkileşimleri ve geri bildirimleri dikkate alınarak iyileştirmeler yapılabilir.
 - Daha fazla branş seçeneği eklenebilir. 
 - Çoklu kullanıcılar için kullanım desteği sağlanabilir. 
-- Oyunsallaştırma yapılabilir.. 
-- Tahlil, MR görüntüleri gibi ekstra seçenekler eklenebilir..
+- Oyunsallaştırma yapılabilir.
+- Tahlil, MR görüntüleri gibi ekstra seçenekler eklenebilir.
 
 
 **Sprint Review Katılımcıları:**  
@@ -816,7 +821,8 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 
 - Takımın uyumu ve işbirliği bu sprintte de devam etti. 
 - Tüm hedefler planlandığı şekilde zamanında tamamlandı. 
-- Arayüz ve kullanıcı deneyimi çalışmaları olumlu sonuç verdi. 
+- Arayüz ve kullanıcı deneyimi çalışmaları olumlu sonuç verdi.
+- Hem website hem mobil uygulama kullanıma hazırlandı.
 - Kullanıcı testlerinden alınan geri bildirimler verimli kullanıldı. 
 - Ekip, sprint boyunca yüksek motivasyonla çalıştı. 
 - Projenin son sunuma hazır hale getirilmesi başarıyla sağlandı. 
@@ -824,7 +830,7 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 
 **❌2. Neler Daha İyi Olabilirdi?**
 
--Kullanıcı testleri daha geniş bir kitleyle yapılabilirdi. 
+- Kullanıcı testleri daha geniş bir kitleyle yapılabilirdi. 
 - Bazı teknik detaylarda test süreçleri daha erkene alınabilirdi. 
 - Dil desteği geç bir aşamada ele alındığı için entegrasyon süreci yoğun geçti. Daha erkene alınarak bu yoğunluk azaltılabilirdi. 
 -Kullanılan AI desteği son zamanlarda değiştiği için AI modül için çalışmalarda zaman zaman zorluklar yaşandı, ilk Sprint için bu araştırmalar yapılabilirdi. 
