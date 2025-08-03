@@ -340,6 +340,24 @@ def show_performance_report():
 # BÖLÜM 3: SAYFA RENDERLAMA FONKSİYONLARI
 # ==============================================================================
 
+def handle_submit():
+    """Form gönderimini yönetir ve doğru işleme fonksiyonunu çağırır."""
+    user_input = st.session_state.chat_input_key_form
+    if user_input.strip():
+        # Teşhis anahtar kelimelerini kontrol et
+        diagnosis_keywords = ["tanım:", "diagnosis:", "تشخيص:"]
+        is_diagnosis_attempt = False
+        for keyword in diagnosis_keywords:
+            if user_input.lower().startswith(keyword):
+                is_diagnosis_attempt = True
+                break
+
+        if is_diagnosis_attempt:
+            handle_diagnosis_attempt(user_input)
+        else:
+            handle_chat_message(user_input)
+
+
 def home_page():
     """Uygulamanın ana sayfasını oluşturur."""
     render_sidebar_common_sections()
@@ -439,12 +457,6 @@ def simulation_page():
         f"{loc.get('tips_title', '📌 İpuçları:')}\n{loc.get('tip_diagnosis_format', '- Tanı için Tanım: X şeklinde yazın.')}\n{loc.get('tip_guess_limit', '- Sadece *2 tahmin hakkınız* vardır. İyi düşünün!')}")
     st.markdown("---")
 
-    def handle_submit():
-        if "tanım:" in st.session_state.chat_input_key.lower():
-            handle_diagnosis_attempt(st.session_state.chat_input_key)
-        else:
-            handle_chat_message(st.session_state.chat_input_key)
-
     for message in st.session_state.conversation[1:]:
         with st.chat_message(message["role"]):
             st.write(message["parts"][0])
@@ -458,7 +470,7 @@ def simulation_page():
         if st.button("🎤", help=loc.get('mic_button_help', "Sesli komut ile konuş")):
             st.session_state.input_text = get_speech_input()
             if st.session_state.input_text:
-                st.session_state.chat_input_key = st.session_state.input_text
+                st.session_state.chat_input_key_form = st.session_state.input_text
                 handle_submit()
 
     with col_form:
@@ -485,8 +497,6 @@ def simulation_page():
             st.session_state.page = "simulation"
             st.session_state.is_new_simulation = True
             st.rerun()
-
-
 # ==============================================================================
 # BÖLÜM 4: ANA YÖNLENDİRİCİ
 # ==============================================================================

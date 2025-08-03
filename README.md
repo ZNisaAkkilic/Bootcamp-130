@@ -52,7 +52,7 @@ CaseZero, tıp öğrencilerinin klinik teşhis ve hasta yönetimi becerilerini g
 
 Aşağıda, projeye ait önceliklendirilmiş işler listesinin (Product Backlog) güncel hali yer almaktadır. Backlog, sprint planlamalarında referans olarak kullanılmakta ve gereksinimlerin önceliklendirilmesini sağlamaktadır. Product Backlog kullanıcı hikayesi ve kabul kriterleri baz alınarak oluşturulmuştur.
 
-<img width="1291" height="780" alt="image" src="https://github.com/user-attachments/assets/12b01a84-f872-4e93-8b48-188775f24f37" />
+![product backlog.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/product%20backlog.jpg)
 
 
 ## 👥 RACI Matrisi
@@ -550,5 +550,264 @@ Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
 - Görevler için tamamlandı tanımını daha iyi yapacağız.
 - Paydaş iletişimine çok daha fazla önem vereceğiz. Gerekirse bir iletişim kanalı oluşturacağız.
 - Gerçek kullanıcı deneyimi sağlayacak ve gerekli düzeltmeleri sağlayacağız.
+
+</details>
+
+
+<details open>
+  <summary><h1>2️⃣Sprint-3</h1></summary>
+
+## 📝 Sprint Notları
+
+- Proje yönetimi için **Monday** aracına geçiş yapılmıştır. Bunun sebebi Trello aracının deneme sürümünün bitmiş olmasıdır. İletişim; önceki sprintlerdeki gibi çoğunlukla **Whatsapp** ve **Google Meet** üzerinden gerçekleştirilecektir. Bu programların kullanım gerekçeleri ilk sprint notlarında açıklanmıştır. 
+
+- Product Backlog üzerinde iyileştirmeler ve eklemeler yapılmıştır. Product Backlog son halini 
+almıştır.
+
+- Projenin son dokunuşları, düzeltmeleri e iyileştirmeleri yapılmıştır. Sprint hedeflerine ulaşmıştır. Sprint teknik yeterlilik ve proje yönetimi alanında tatmin edici şekilde sonlanmıştır. 
+
+- Ekip içi görev dağılımı ve iş takibi son sprintte de etkili bir şekilde sürdürülmüştür. Takım üyeleri proje sürecini sahiplendiklerini ve sorumluluk bilinciyle hareket ettiklerini ortaya koymuştur.
+
+
+## 🏴󠁬󠁶󠀱󠀰󠀰󠁿Tahmin Edilen Puan ve Tamamlanan Puan
+Üçüncü sprintte de önceki sprintlerdeki gibi 100 puan tahmin edilmiştir. Sprint sonunda hedeflenen 100 puan tamamlanmıştır. Böylece proje toplamda 300 puanlık iş yükü ile planlandığı şekilde sonlandırılmıştır. 
+
+## 💯 Puan Tamamlama Mantığı
+Proje boyunca tahmini puan 300 olarak atanmıştır. Her sprintte puan 100 olmak sureti ile çalışılması planlanmıştır. 
+## 💼 Daily Scrum 
+Daily Scrum toplantıları her zamanki gibi yaklaşık 15 dakika kadar gerçekleştirilmiştir. Toplantı ekran görüntüleri verilmiştir.
+
+<details>
+<summary>📂 21.07.2025</summary>
+
+![21.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/21.07.jpg)
+
+
+</details>
+
+<details>
+<summary>📂 22.07.2025</summary>
+
+![22.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/22.07.jpg)
+
+
+</details>
+
+<details>
+<summary>📂 23.07.2025</summary>
+
+![23.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/23.07.jpg)
+
+
+</details>
+
+<details>
+<summary>📂 24.07.2025</summary>
+
+![24.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/24.07.jpg)
+
+
+</details>
+
+<details>
+<summary>📂 25.07.2025</summary>
+  
+![25.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/25.07.jpg)
+
+
+</details>
+
+<details>
+<summary>📂 26.07.2025</summary>
+  
+![26.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/26.07.jpg)
+
+
+</details>
+
+<details>
+<summary>📂 27.07.2025</summary>
+
+![27.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/27.07.jpg)
+
+
+</details>
+
+<details>
+<summary>📂 28.07.2025</summary>
+
+![28.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/28.07.jpg)
+
+
+</details>
+
+<details>
+<summary>📂 29.07.2025</summary>
+
+![29.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/29.07.jpg)
+
+
+</details>
+
+<details>
+<summary>📂 31.07.2025</summary>
+
+![30.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/30.07.jpg)
+
+
+</details>
+
+<details>
+<summary>📂 31.07.2025</summary>
+
+![31.07.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/31.07.jpg)
+
+
+</details>
+
+<details>
+<summary>📂 01.08.2025</summary>
+
+![01.08.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/01.08.jpg)
+
+
+</details>
+
+<details>
+<summary>📂 02.08.2025</summary>
+
+![02.08.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/02.08.jpg)
+
+
+</details>
+
+
+## 📋 Sprint Board
+
+Sprint Board, bu Sprint için Monday üzerinden yönetilmiştir. Aşağıda ilgili  ekran görüntüleri yer almaktadır. 
+
+
+### 📸 Kanban Görüntüleri
+
+#### 📌 Monday - Kanban Görüntüsü 1  
+![Monday-1.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/Monday-1.jpg)
+
+#### 📌 Monday - Kanban Görüntüsü 2  
+![Monday-2.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/Monday-2.jpg)
+
+
+
+## 📸 Ürün Ekran Görüntüleri
+
+Ürünün geliştirme sürecine dair ekran görüntüleri aşağıda sunulmuştur. Platformun son halinin görüntüleri yer almaktadır. Açılış ekranı, birkaç sohbet örneği, koyu tema özellliği ve farklı dillerdeki ekran görüntüleri verilmiştir.
+
+
+
+### Açılış Ekranı
+
+Uygulamanın açılış ekranının son hali şekildeki gibidir.
+
+
+![Açılış Ekranı.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/A%C3%A7%C4%B1l%C4%B1%C5%9F%20Ekran%C4%B1.jpg)
+
+
+### Konuşma Ekranı
+
+Konuşma ekranının son hali şekildeki gibidir.
+
+
+![Konuşma Ekranı.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/Konu%C5%9Fma%20Ekran%C4%B1.jpg)
+
+
+### Vaka-1
+
+Genel kategoride bir vaka örneği şekildeki gibidir.
+
+![Vaka-1.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/Vaka-1.jpg)
+
+
+### Vaka-2
+
+Kardiyoloji branşında bir vaka örneği şekildeki gibidir.
+
+![Vaka-2.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/Vaka-2.jpg)
+
+
+### İngilizce Dil Desteği
+
+![İngilizce.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/%C4%B0ngilizce.jpg)
+
+
+### Arapça Dil Desteği
+
+![Arapça.jpg](../../Users/rumey/Desktop/CaseZero/Sprint-3/Arap%C3%A7a.jpg)
+
+
+
+## 👁️Sprint Review [02.08.2025]  
+
+**Sprint Hedefi:**  
+
+Bu sprintte, sistemin genel işleyişinin son haliyle tamamlanması, kullanıcı deneyiminin artırılması ve sistemin test edilerek kullanılabilir duruma getirilmesi hedeflenmiştir. Ayrıca önceki sprintlerde planlanan İngilizce dil desteği gibi uluslararasılaştırma adımları da tamamlanmıştır. 
+
+**Tamamlanan İşler:**  
+- Projeye farklı dil seçenekleri eklendi. Şu anda platform İngilizce,Arapça ve Türkçe 
+dillerinde çalışmaktadır. 
+- Gemini ile API Key ve kota sorunu yaşandığından başka bir Yapay Zeka modeli olan Groq ile de yapılandırma yapıldı. HemGroq hem Gemini ile kod çalıştırılabilmektedir. 
+- Yapay zeka modülü entegrasyonu sağlandı. 
+- Yapay zeka modülü entegrasyonu ile ilgili problemler çözüldü ve modül geliştirildi.
+- Koyu tema özelliği eklendi. Renk ayarlamaları yapıldı. 
+- Önceki prompt arama çubuğunda kalması sorunu düzeltildi. 
+- Yalnızca gönder butonuna değil enter tuşuna basınca da promptun girilmesi sağlanarak kullanım kolaylığı artırıldı. 
+- Sistem üzerinde karşılaşılan teknik hatalar (bug'lar) tespit edilerek projenin genel kararlılığı artırıldı. 
+- Arayüz tasarımı son haliyle optimize edilerek kullanıcı dostu ve fonksiyonel hale getirildi. 
+- Kullanıcı deneyimi testleri yapıldı. Gerçek kullanıcılarla yapılan küçük ölçekli denemeler sonucunda bazı küçük hata düzeltmeleri gerçekleştirildi 
+- Consulted rolündeki kişiler ile iletişime geçilerek yapılan istişareler sonucu proje hakkında geri bildirim yapıldı. 
+- Son sunum ve demo için gerekli sunum dosyaları ve tanıtım materyalleri hazırlandı. 
+- Ekip üyeleri projenin  ilerleyişini yakından takip etti, olumlu karşıladı ve sürece aktif şekilde dahil oldu. Proje, takım tarafından sahiplenildi ve ilerleyişi izlenip onaylandı. 
+
+**Geri Bildirimler ve Sonraki Adımlar:**  
+_Proje hedeflenen sprint içinde hedeflerine ulaşmış ve tamamlanmıştır ancak ürün geliştirme 
+ve akademi sonrası için de çalışmalar yapılması ihtimaline karşın bu “Geri Bildirim ve 
+Sonraki Adımlar” bloğu yazılmıştır._
+
+- Proje, kullanıcı deneyimi açısından olumlu geri dönüşler almıştır. Kullanıcıların sistemle etkileşimleri ve geri bildirimleri dikkate alınarak iyileştirmeler yapılabilir.
+- Daha fazla branş seçeneği eklenebilir. 
+- Çoklu kullanıcılar için kullanım desteği sağlanabilir. 
+- Oyunsallaştırma yapılabilir.. 
+- Tahlil, MR görüntüleri gibi ekstra seçenekler eklenebilir..
+
+
+**Sprint Review Katılımcıları:**  
+Rumeysa Nur Demirbaş, Zeynep Nisa Akkılıç, Yakup Dolat
+
+## Sprint Retrospektif [02.08.2025]
+
+**✅1. Neler İyi Gitti?**
+
+- Takımın uyumu ve işbirliği bu sprintte de devam etti. 
+- Tüm hedefler planlandığı şekilde zamanında tamamlandı. 
+- Arayüz ve kullanıcı deneyimi çalışmaları olumlu sonuç verdi. 
+- Kullanıcı testlerinden alınan geri bildirimler verimli kullanıldı. 
+- Ekip, sprint boyunca yüksek motivasyonla çalıştı. 
+- Projenin son sunuma hazır hale getirilmesi başarıyla sağlandı. 
+
+
+**❌2. Neler Daha İyi Olabilirdi?**
+
+-Kullanıcı testleri daha geniş bir kitleyle yapılabilirdi. 
+- Bazı teknik detaylarda test süreçleri daha erkene alınabilirdi. 
+- Dil desteği geç bir aşamada ele alındığı için entegrasyon süreci yoğun geçti. Daha erkene alınarak bu yoğunluk azaltılabilirdi. 
+-Kullanılan AI desteği son zamanlarda değiştiği için AI modül için çalışmalarda zaman zaman zorluklar yaşandı, ilk Sprint için bu araştırmalar yapılabilirdi. 
+
+**➡️3. Gelecek İçin Neyi Değiştireceğiz?**
+_Proje hedeflenen sprint içinde hedeflerine ulaşmış ve tamamlanmıştır ancak ürün geliştirme 
+ve akademi sonrası için de çalışmalar yapılması ihtimaline karşın bu “Gelecek için neyi 
+değiştireceğiz?” bloğu yazılmıştır._
+
+- Teknik aksaklıkların yaşanmaması için bazı teknik konular ilk zamanlardan itibaren 
+gündeme alınacak. 
+- Gelecek projelerde kullanıcı testleri sprintlere daha erken entegre edilecek. 
+- Geri bildirim mekanizması en başta planlanarak iteratif şekilde geliştirilecek. 
 
 </details>

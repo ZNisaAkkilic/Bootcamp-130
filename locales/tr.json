@@ -60,7 +60,7 @@
   "logs_saved_success": "Loglar 'teşhis_loglari.json' dosyasına kaydedildi.",
   "no_logs_to_save": "Kaydedilecek log bulunamadı.",
   "new_simulation_button_main": "Yeni Simülasyon",
-  "footer_text": "AI Doktor Simülatörü - Eğitim Amaçlı Bir Uygulamadır",
+  "footer_text": "AI Hasta Simülatörü - Eğitim Amaçlı Bir Uygulamadır",
   "language_turkish": "Türkçe",
   "language_english": "İngilizce",
   "language_arabic": "Arapça",
