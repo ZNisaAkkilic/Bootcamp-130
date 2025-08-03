@@ -1,16 +1,14 @@
-# yakup
+# 📱 CaseZero Mobil Uygulaması
 
-A new Flutter project.
+Bu klasör, **CaseZero** projesinin Flutter ile geliştirilen mobil uygulamasını içermektedir.  
+Uygulama, hem Android hem de iOS platformlarını destekleyecek şekilde yapılandırılmıştır.
 
-## Getting Started
+## 🚀 Proje Hakkında
 
-This project is a starting point for a Flutter application.
+Mobil uygulama aşağıdaki temel bileşenleri içerir:
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter widget yapıları ve sayfaları  
+- API entegrasyonları ve veri yönetimi  
+- Arayüz tasarımları  
+- Proje yapılandırma dosyaları (`pubspec.yaml`, vs.)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
